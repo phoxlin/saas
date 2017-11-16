@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<table name="f_interact" comment="健身圈">
+  <column name="id" field="id" type="string" comment="ID" length="24" nullable="false" controlType="easyui-validatebox" input_tablename="f_atricle" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="" search_compare="" iskey="true" isAutoGenerate="true"/>
+  <column name="cust_name" field="cust_name" type="string" comment="cust_name" length="100" nullable="false" controlType="easyui-validatebox" input_tablename="f_atricle" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="" search_compare=""/>
+  <column name="gym" field="gym" type="string" comment="gym" length="100" nullable="false" controlType="easyui-validatebox" input_tablename="f_atricle" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="" search_compare=""/>
+  <column name="auth_type" field="auth_type" type="string" comment="可见范围" length="20" nullable="true" controlType="easyui-validatebox" input_tablename="f_atricle" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="" search_compare=""/>
+  <column name="type" field="type" type="string" comment="发布途径" length="100" nullable="true" controlType="easyui-validatebox" input_tablename="f_atricle" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="" search_compare=""/>
+  <column name="art_title" field="art_title" type="string" comment="标题" length="100" nullable="true" controlType="easyui-validatebox" input_tablename="f_atricle" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="" search_compare=""/>
+  <column name="summary" field="summary" type="string" comment="简介" length="100" nullable="true" controlType="easyui-validatebox" input_tablename="" width="100" min="0" max="" decamial="0" otherset="" placeholder="" search_compare=""/>
+  <column name="content" field="content" type="text" comment="内容" length="-1" nullable="true" controlType="editor" input_tablename="f_atricle" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="" search_compare=""/>
+  <column name="create_time" field="create_time" type="datetime" comment="创建时间" nullable="false" controlType="easyui-datetimebox" input_tablename="f_atricle" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="" search_compare=""/>
+  <column name="user_id" field="user_id" type="string" comment="发布者ID" length="24" nullable="false" controlType="easyui-combobox" input_tablename="f_atricle" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="" search_compare=""/>
+  <column name="user_name" field="user_name" type="string" comment="发布者姓名" length="24" nullable="false" controlType="easyui-combobox" input_tablename="f_atricle" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="" search_compare=""/>
+  <column name="release_time" field="release_time" type="datetime" comment="发布时间" nullable="false" controlType="easyui-datetimebox" input_tablename="f_atricle" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="" search_compare=""/>
+  <column name="g_num" field="g_num" type="string" comment="点赞数" length="20" nullable="true" controlType="easyui-numberbox" input_tablename="f_atricle" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="" search_compare=""/>
+  <column name="state" field="state" type="string" comment="状态" length="24" nullable="true" controlType="easyui-validatebox" input_tablename="f_atricle" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="" search_compare=""/>
+  <column name="goods" field="goods" type="string" comment="是否是商品消息" length="24" nullable="true" controlType="easyui-validatebox" input_tablename="f_atricle" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="" search_compare=""/>
+  <column name="employee" field="employee" type="string" comment="是否员工" length="24" nullable="true" controlType="easyui-validatebox" input_tablename="f_atricle" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="" search_compare=""/>
+  <column name="pics" field="pics" type="string" comment="图片" length="1000" nullable="true" controlType="easyui-validatebox" input_tablename="f_atricle" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="" search_compare=""/>
+</table>

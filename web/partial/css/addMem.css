@@ -1,0 +1,233 @@
+@CHARSET "UTF-8";
+body{margin: 0;}
+.user-basic-info,
+.user-more-info,
+.pay-info{
+	padding: 10px 60px;
+	color: #666;
+}
+.buy-card-info{padding: 0 60px;}
+.user-buy-card{padding: 0px 60px 10px;}
+
+.user-basic-info .col-xs-6,
+.user-more-info .col-xs-6,
+.user-buy-card .col-xs-6,
+.buy-card-info .col-xs-6{width: 47%;margin-left: 3%;}
+.user-basic-info .col-xs-12,
+.user-more-info .col-xs-12,
+.user-buy-card .col-xs-12,
+.buy-card-info .col-xs-12{width: 97%;margin-left: 3%;}
+
+.pay-info{padding-top: 0;}
+.user-buy-card,
+.buy-card-info,
+.pay-info{
+	border-bottom: 0;
+}
+.user-basic-info .container,
+.user-more-info .container,
+.buy-card-info .container,
+.pay-info .container{
+	width: 100%;padding: 0;
+	font-size: 15px;
+}
+.input-panel label{
+	margin: 0;padding: 0 20px !important;
+	border: 1px solid #ddd;border-right: 0;background: #fff;border-radius: 2px 0 0 2px;
+	font-weight: normal;color: #666;
+}
+.input-panel{margin-bottom: 10px;}
+.input-panel input,
+.input-panel select,
+.input-panel div.bind{
+	width: calc(100% - 110px);margin-left: -4px;
+}
+.input-panel input,
+.input-panel div.bind,
+.input-panel select,
+.input-panel textarea{
+	border: 1px solid #ddd;background: #f9f9f9;border-radius: 0 2px 2px 0;font-size: 12px;
+}
+.input-panel div.bind span{cursor: pointer;}
+.input-panel input,
+.input-panel select,
+.input-panel textarea{
+	color: #333;
+}
+.input-panel input:FOCUS,
+.input-panel select:FOCUS,
+.input-panel textarea:FOCUS{
+	border: 1px solid #333333;outline: none;
+}
+.input-panel label,
+.input-panel input,
+.input-panel div.bind,
+.input-panel select{
+	height: 18px;padding: 0 10px;line-height: 18px;vertical-align: middle;font-size: 12px;
+}
+.input-panel label.mini{padding: 0 8px !important;}
+.input-panel div.bind{padding: 0 0 0 10px;}
+.input-panel div.bind input{display: block;border: 0;font-size: 12px;height: 90%;line-height: 100%;}
+.input-panel select{
+  appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+
+  background: url("../../public/fit/images/arrow.png") no-repeat scroll right center #f9f9f9;
+  padding-right: 42px;
+  background-size: 42px;
+}
+.input-panel textarea{width: 100%;height: 80px;padding: 5px 10px; resize: none;}
+.input-panel div[class*=col-xs-]{padding: 0;}
+.input-panel div.bind{display: inline-block;}
+.input-panel div.bind button{
+	width: 100%;display: block;height: 16px;margin-top: 0;line-height: 16px;padding: 0;
+	border-radius: 0 2px 2px 0;border: 0;
+	background: #fae152;color: #666;font-size: 12px;
+}
+.input-panel div.bind button.xx-btn{
+	border-radius: 0;border-left: 1px solid #dedede;
+	background: #e5f4ff;
+}
+.sub-title{color: #ccc;vertical-align: super;}
+.bind .head{
+	display: inline-block;width: 25px;height: 25px;margin-top: 7px;
+	background: #fff;border: 1px solid #bfbfbf;
+}
+
+.ui-dialog-title {
+    color: #333;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+}
+.user-title{margin-bottom: 20px;}
+.user-buy-card li>a{
+	display: inline-block;padding-left: 40px;
+	background-repeat: no-repeat;background-size: 23px 26px;background-position: 10px center;
+}
+.user-buy-card .days-btn a{
+	background-image: url("../../public/fit/images/days2.png");
+}
+.user-buy-card .days-btn.active a{
+	background-image: url("../../public/fit/images/days.png");
+}
+.user-buy-card .lesson-btn a{
+	background-position: 15% center;
+	background-image: url("../../public/fit/images/lesson2.png");
+}
+.user-buy-card .lesson-btn.active a{
+	background-image: url("../../public/fit/images/lesson.png");
+}
+.user-buy-card .times-btn a{
+	background-image: url("../../public/fit/images/times2.png");
+}
+.user-buy-card .times-btn.active a{
+	background-image: url("../../public/fit/images/times.png");
+}
+.user-buy-card .amt-btn a{
+	background-image: url("../../public/fit/images/amt2.png");
+}
+.user-buy-card .amt-btn.active a{
+	background-image: url("../../public/fit/images/amt.png");
+}
+
+.card-panel,
+.pay-type-panel {  
+    position: relative; display: inline-block;
+    padding-right: 30px;margin-bottom: 15px; font-size: 12px;
+}  
+.card-panel b{
+	margin-left: 5px;font-size: 12px;font-weight: normal;vertical-align: sub;
+}
+.card-panel input[type=radio] {  
+    visibility: hidden;  
+}  
+.card-panel label{margin-bottom: 0;vertical-align: bottom;}
+.card-panel label span{  
+    cursor: pointer;  
+    position: absolute;  
+    width: 14px;  
+    height: 14px;  
+    top: 24%;  
+    left: 0;  
+    background: #fff;  
+    border:1px solid #bbb;  
+    -moz-border-radius: 2px;      /* Gecko browsers */  
+    -webkit-border-radius: 2px;   /* Webkit browsers */  
+    border-radius:2px;            /* W3C syntax */  
+}  
+.card-panel label span:after {  
+    opacity: 0;  
+    content: '';  
+    position: absolute;  
+    width: 10px;  
+    height: 6px;  
+    background: transparent;  
+    top: 1px;  
+    left: 1px;  
+    border: 2px solid #fab42d;  
+    border-top: none;  
+    border-right: none;  
+    -webkit-transform: rotate(-45deg);  
+    -moz-transform: rotate(-45deg);  
+    -o-transform: rotate(-45deg);  
+    -ms-transform: rotate(-45deg);  
+    transform: rotate(-45deg);  
+}  
+.card-panel input[type=radio]:checked + label span:after {  
+    opacity: 1; 
+}  
+.card-panel input[type=radio]:checked + label span {  
+    border: 1px solid #fab42d;
+}  
+.add-card-btn{
+	height: 18px;padding: 0 20px;
+	border: 1px dashed #b5b5b5;background-color: #f9f9f9;font-size: 12px;
+}
+.pay-type-panel>span{
+	min-width: 25px;height: 23px;display: inline-block;padding-left: 30px;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.pay-type-panel .pay-cash{
+	background-image: url("../../public/fit/images/pay_cash.png");
+}
+.pay-type-panel .pay-bank{
+	background-image: url("../../public/fit/images/pay_bank.png");
+}
+.pay-type-panel .pay-wx{
+	background-image: url("../../public/fit/images/pay_wx.png");
+}
+.pay-type-panel .pay-ali{
+	background-image: url("../../public/fit/images/pay_ali.png");
+}
+.need{
+	position: absolute;
+    left: 2px;
+    display: inline-block;
+    color: #fe7575;
+    line-height: 2;
+    font-size: 16px;
+}
+.nav-tabs{margin-left: 40px;-webkit-padding-start: 0;font-size: 16px;}
+.nav-tabs>li{background: #f5f5f5;}
+.nav-tabs>li>a{color: #999 !important;border-radius: 0;}
+.nav-tabs>li.active>a, 
+.nav-tabs>li.active>a:focus, 
+.nav-tabs>li.active>a:hover{background-color: #f6fbff;}
+.nav-tabs>li:hover,
+.nav-tabs>li>a:hover{margin-bottom: -1px !important;border-bottom: 0;}
+.nav-tabs > li > a:hover {
+  border-bottom: 0;
+}
+.nav-tabs ~ .container{background-color: #f6fbff;padding: 22px 18px;}
+.nav-tabs>li.active>a{color: #333 !important;}
+
+.icon-edit{
+	display: none;width: 15px;height: 15px;position: absolute;top: 5px;right: 8px;
+	background: transparent url("../../public/fit/images/edit.png") no-repeat center center;
+	background-size: contain;vertical-align: middle;cursor: pointer;
+}
+.card-panel{position: relative;}
+.card-panel:hover .icon-edit{display: inline-block;}

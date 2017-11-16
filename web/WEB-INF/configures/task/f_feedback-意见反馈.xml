@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <task code="f_feedback" name="意见反馈" load-on-startup="1" isTask="N" isFirstTask="N" left_col_number="0" right_col_number="12">
+    <decision/>
+    <content>
+      <legend type="data-grid" code="f_feedback" name="意见反馈" rdb="Y" autoLoadingData="N" initSql="select * from f_feedback" entity="f_feedback" column_show_num="2" spaceWidth="40" titleWidth="90" inputWidth="170" winWidth="700" winHeight="500">
+        <toolbars>
+          <toolbar class="btn-primary" text="详细信息" js="detail" name="detail" visible_code="f_feedback_detail"/>
+          <toolbar class="btn-primary" text="修改" js="edit" name="edit" visible_code="f_feedback_edit"/>
+          <toolbar class="btn-danger" text="删除" js="del" name="del" visible_code="f_feedback_del"/>
+        </toolbars>
+        <columns>
+          <column code="id" display="id" width="100" length="100" format="" show="N" send="Y" sort="Y" nullable="Y" ignore="N" edit="Y" hidden="Y" readonly="N" line="N" query="Y" placeholder="" bindType="no" bindData="" controlType="easyui-validatebox" defaultValue="" tablename="f_feedback" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare=""/>
+          <column code="gym" display="gym" width="100" length="100" format="" show="N" send="Y" sort="Y" nullable="Y" ignore="N" edit="Y" hidden="Y" readonly="N" line="N" query="Y" placeholder="" bindType="no" bindData="" controlType="easyui-validatebox" defaultValue="" tablename="f_feedback" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare=""/>
+          <column code="cust_name" display="cust_name" width="100" length="100" format="" show="N" send="Y" sort="Y" nullable="Y" ignore="N" edit="Y" hidden="Y" readonly="N" line="N" query="Y" placeholder="" bindType="no" bindData="" controlType="easyui-validatebox" defaultValue="" tablename="f_feedback" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare=""/>
+          <column code="content" display="意见内容" width="100" length="100" format="" show="Y" send="Y" sort="Y" nullable="Y" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="" bindType="no" bindData="" controlType="editor" defaultValue="" tablename="f_feedback" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare=""/>
+          <column code="mem_msg" display="用户联系方式" width="100" length="100" format="" show="Y" send="Y" sort="Y" nullable="N" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="" bindType="no" bindData="" controlType="easyui-validatebox" defaultValue="" tablename="f_feedback" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare=""/>
+          <column code="mem_id" display="用户" width="100" length="100" format="" show="N" send="Y" sort="Y" nullable="Y" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="" bindType="sql" bindData="select id as code,mem_name as note from f_mem" controlType="easyui-combobox" defaultValue="" tablename="f_feedback" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare=""/>
+          <column code="create_date" display="提交时间" width="200" length="100" format="yyyy-MM-dd hh:mm" show="Y" send="Y" sort="Y" nullable="Y" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="" bindType="no" bindData="" controlType="easyui-datetimebox" defaultValue="" tablename="f_feedback" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare=""/>
+          <column code="stete" display="是否处理" width="100" length="100" format="" show="Y" send="Y" sort="Y" nullable="Y" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="" bindType="codetable" bindData="PUB_C001" controlType="easyui-combobox" defaultValue="" tablename="f_feedback" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare=""/>
+        </columns>
+      </legend>
+    </content>
+  </task>
+</root>

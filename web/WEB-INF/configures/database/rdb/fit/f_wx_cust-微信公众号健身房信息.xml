@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<table name="f_wx_cust" comment="微信公众号健身房信息">
+	<column name="id" field="id" type="string" comment="ID" length="24" nullable="false" controlType="easyui-validatebox" input_tablename="" width="100" min="0" max="" decamial="0" otherset="" placeholder="" search_compare="" iskey="true" isAutoGenerate="true" />
+	<column name="wx_open_id" field="wx_open_id" type="string" comment="WX_OPEN_ID" length="50" nullable="false" controlType="easyui-validatebox" input_tablename="" width="100" min="0" max="" decamial="0" otherset="" placeholder="" search_compare="" />
+	<column name="cust_name" field="cust_name" type="string" comment="客户" length="50" nullable="false" controlType="easyui-validatebox" input_tablename="" width="100" min="0" max="" decamial="0" otherset="" placeholder="" search_compare="" />
+	<column name="gym" field="gym" type="string" comment="会所" length="50" nullable="true" controlType="easyui-validatebox" input_tablename="" width="100" min="0" max="" decamial="0" otherset="" placeholder="" search_compare="" />
+	<column name="headurl" field="headurl" type="string" comment="微信头像" length="400" nullable="true" controlType="easyui-validatebox" input_tablename="" width="100" min="0" max="" decamial="0" otherset="" placeholder="" search_compare="" />
+	<column name="sex" field="sex" type="string" comment="性别" length="20" nullable="true" controlType="easyui-validatebox" input_tablename="" width="100" min="0" max="" decamial="0" otherset="" placeholder="" search_compare="" />
+	<column name="nickname" field="nickname" type="string" comment="微信昵称" length="100" nullable="true" controlType="easyui-validatebox" input_tablename="" width="100" min="0" max="" decamial="0" otherset="" placeholder="" search_compare="" />
+</table>

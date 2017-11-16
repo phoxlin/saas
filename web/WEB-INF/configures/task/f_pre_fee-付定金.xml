@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <task code="f_pre_fee" name="付定金" load-on-startup="1" isTask="N" isFirstTask="N" left_col_number="0" right_col_number="12">
+    <decision/>
+    <content>
+      <legend type="data-grid" code="f_pre_fee" name="f_pre_fee" rdb="Y" autoLoadingData="N" initSql="select * from f_pre_fee" entity="f_pre_fee" column_show_num="2" spaceWidth="40" titleWidth="90" inputWidth="170" winWidth="700" winHeight="500">
+        <toolbars>
+          <toolbar class="btn-primary" text="详细信息" js="detail" name="detail" visible_code="f_pre_fee_detail"/>
+          <toolbar class="btn-primary" text="添加" js="add" name="add" visible_code="f_pre_fee_add"/>
+          <toolbar class="btn-primary" text="修改" js="edit" name="edit" visible_code="f_pre_fee_edit"/>
+          <toolbar class="btn-danger" text="删除" js="del" name="del" visible_code="f_pre_fee_del"/>
+        </toolbars>
+        <columns>
+          <column code="id" display="ID" width="100" length="24" format="" show="Y" send="Y" sort="Y" nullable="Y" ignore="N" edit="N" hidden="Y" readonly="N" line="N" query="Y" placeholder="ID" bindType="no" bindData="" controlType="easyui-validatebox" defaultValue="" tablename="f_pre_fee" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare=""/>
+          <column code="cuat_name" display="CUAT_NAME" width="100" length="50" format="" show="Y" send="Y" sort="Y" nullable="Y" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="CUAT_NAME" bindType="no" bindData="" controlType="easyui-validatebox" defaultValue="" tablename="f_pre_fee" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare=""/>
+          <column code="gym" display="GYM" width="100" length="50" format="" show="Y" send="Y" sort="Y" nullable="Y" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="GYM" bindType="no" bindData="" controlType="easyui-validatebox" defaultValue="" tablename="f_pre_fee" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare=""/>
+          <column code="pay_amt" display="定金" width="100" length="20" format="" show="Y" send="Y" sort="Y" nullable="Y" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="定金" bindType="no" bindData="" controlType="easyui-numberbox" defaultValue="" tablename="f_pre_fee" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare=""/>
+          <column code="user_amt" display="抵扣" width="100" length="20" format="" show="Y" send="Y" sort="Y" nullable="Y" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="抵扣" bindType="no" bindData="" controlType="easyui-numberbox" defaultValue="" tablename="f_pre_fee" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare=""/>
+          <column code="state" display="状态" width="100" length="20" format="" show="Y" send="Y" sort="Y" nullable="Y" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="状态" bindType="no" bindData="" controlType="easyui-validatebox" defaultValue="" tablename="f_pre_fee" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare=""/>
+          <column code="mem_id" display="会员ID" width="100" length="24" format="" show="Y" send="Y" sort="Y" nullable="Y" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="会员ID" bindType="no" bindData="" controlType="easyui-validatebox" defaultValue="" tablename="f_pre_fee" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare=""/>
+          <column code="emp_id" display="员工ID" width="100" length="24" format="" show="Y" send="Y" sort="Y" nullable="Y" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="员工ID" bindType="no" bindData="" controlType="easyui-validatebox" defaultValue="" tablename="f_pre_fee" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare=""/>
+          <column code="user_time" display="使用时间" width="100" length="100" format="" show="Y" send="Y" sort="Y" nullable="N" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="使用时间" bindType="no" bindData="" controlType="easyui-datetimebox" defaultValue="" tablename="f_pre_fee" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare=""/>
+          <column code="op_time" display="付款时间" width="100" length="100" format="" show="Y" send="Y" sort="Y" nullable="Y" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="付款时间" bindType="no" bindData="" controlType="easyui-datetimebox" defaultValue="" tablename="f_pre_fee" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare=""/>
+        </columns>
+      </legend>
+    </content>
+  </task>
+</root>

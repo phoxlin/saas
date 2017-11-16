@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+	<task code="f_mem_maintain" name="会员管理" load-on-startup="1" isTask="N" isFirstTask="N" left_col_number="0" right_col_number="12">
+		<decision />
+		<content>
+			<legend type="data-grid" code="f_mem" name="会员管理" rdb="Y" autoLoadingData="N" initSql="select * from f_mem" entity="f_mem" column_show_num="2" spaceWidth="40" titleWidth="90" inputWidth="170" winWidth="700" winHeight="500">
+				<toolbars>
+					<toolbar class="btn-primary" text="详细信息" js="detail" name="detail" visible_code="f_mem_detail" />
+					<toolbar class="btn-primary" text="更改会籍" js="change_sales" name="change_sales" visible_code="f_mem_change_sales" />
+					<toolbar class="btn-primary" text="更改教练" js="change_coach" name="change_coach" visible_code="f_mem_change_coach" />
+					<toolbar class="btn-danger" text="删除" js="del" name="del" visible_code="f_mem_del" />
+
+				</toolbars>
+				<columns>
+					<column code="id" display="ID" width="100" length="24" format="" show="N" send="Y" sort="Y" nullable="Y" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="ID" bindType="no" bindData="" controlType="easyui-validatebox" defaultValue="" tablename="f_mem" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare="" />
+					<!-- <column code="gym" display="门店" width="100" length="50" format="" show="Y" send="Y" sort="Y" nullable="N" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="门店代码" bindType="sql" bindData=" select gym code,gym_name note from f_gym" controlType="easyui-validatebox" defaultValue="" tablename="f_mem" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare=""/> -->
+					<column code="mem_name" display="姓名" width="100" length="100" format="" show="Y" send="Y" sort="Y" nullable="Y" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="姓名" bindType="no" bindData="" controlType="easyui-validatebox" defaultValue="" tablename="f_mem" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare="" />
+					<column code="sex" display="性别" width="100" length="20" format="" show="Y" send="Y" sort="Y" nullable="N" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="性别" bindType="codetable" bindData="PUB_C919" controlType="easyui-validatebox" defaultValue="" tablename="f_mem" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare="" />
+					<column code="phone" display="手机号" width="150" length="20" format="" show="Y" send="Y" sort="Y" nullable="N" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="手机号" bindType="no" bindData="" controlType="easyui-validatebox" defaultValue="" tablename="f_mem" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare="" />
+					<column code="mem_no" display="会员卡号" width="150" length="100" format="" show="Y" send="Y" sort="Y" nullable="N" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="会员卡号" bindType="no" bindData="" controlType="easyui-validatebox" defaultValue="" tablename="f_mem" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare="" />
+					<column code="mc_id" display="会籍" width="120" length="24" format="" show="Y" send="Y" sort="Y" nullable="N" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="专属会稽" bindType="sql" bindData="select a.id code,a.mem_name note from f_mem_#{user.cust_name} a,f_emp b where a.id=b.id" controlType="easyui-validatebox" defaultValue="" tablename="f_mem" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare="" />
+					<column code="pt_names" display="教练" width="120" length="240" format="" show="Y" send="Y" sort="Y" nullable="N" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="专属教练们" bindType="sql" bindData="select a.id code,a.mem_name note from f_mem_#{user.cust_name} a,f_emp b where a.id=b.id" controlType="easyui-validatebox" defaultValue="" tablename="f_mem" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare="" />
+					<column code="remain_amt" display="储值金额" width="150" length="100" format="longprice2" show="Y" send="Y" sort="Y" nullable="N" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="储值余额" bindType="no" bindData="" controlType="easyui-numberbox" defaultValue="" tablename="f_mem" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare="" />
+					<column code="create_time" display="添加时间" width="100" length="100" format="yyyy-MM-dd" show="Y" send="Y" sort="Y" nullable="N" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="会员登记时间" bindType="no" bindData="" controlType="easyui-datetimebox" defaultValue="" tablename="f_mem" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare="" />
+				</columns>
+			</legend>
+		</content>
+	</task>
+</root>

@@ -1,0 +1,47 @@
+@CHARSET "UTF-8";
+body, html {
+    font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial,sans-serif;
+}
+.pager{margin: 0 !important;}
+.pager>div {
+	width: 50%;
+	float: left;
+	padding: 20px 0;
+	font-size: 15px;
+    text-align: left;
+}
+
+.pager>div .fa {
+	font-size: 22px;
+	vertical-align: text-top;
+}
+
+.pager>div:LAST-CHILD {
+	text-align: right;
+}
+
+.pager>div i {
+	font-style: normal;
+}
+
+.pager>div a {
+	display: inline-block;
+	width: 15px;
+	cursor: pointer;
+	margin-right: 5px;
+	color: #666 !important;
+	text-decoration: none !important; 
+}
+
+.pager>div a.disabled,
+.pager>div a.disabled .fa {
+	color: #ccc !important;
+}
+
+.pager>div a.disabled:HOVER {
+	cursor: url("../images/disabled.png"), default;
+}
+
+.pager .disabled>a, .pager .disabled>a:focus, .pager .disabled>a:hover, .pager .disabled>span{
+	background-color: transparent;
+}

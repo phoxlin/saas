@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<table name="f_active_item" comment="活动项目">
+  <column name="id" field="id" type="string" comment="ID" length="24" nullable="false" controlType="easyui-validatebox" input_tablename="f_active_item" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="ID" search_compare="" iskey="true" isAutoGenerate="true"/>
+  <column name="act_id" field="act_id" type="string" comment="活动ID" length="24" nullable="false" controlType="easyui-validatebox" input_tablename="f_active_item" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="活动ID" search_compare=""/>
+  <column name="prj_type" field="prj_type" type="string" comment="项目类型" length="20" nullable="false" controlType="easyui-validatebox" input_tablename="f_active_item" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="项目类型" search_compare=""/>
+  <column name="prj_id" field="prj_id" type="string" comment="项目ID" length="24" nullable="false" controlType="easyui-validatebox" input_tablename="f_active_item" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="项目ID" search_compare=""/>
+  <column name="prj_name" field="prj_name" type="string" comment="项目名称" length="50" nullable="false" controlType="easyui-validatebox" input_tablename="f_active_item" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="项目名称" search_compare=""/>
+  <column name="price" field="price" type="string" comment="原价" nullable="false" controlType="easyui-numberbox" input_tablename="f_active_item" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="原价" search_compare=""/>
+  <column name="act_price" field="act_price" type="string" comment="活动价" nullable="false" controlType="easyui-numberbox" input_tablename="f_active_item" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="活动价" search_compare=""/>
+  <column name="remark" field="remark" type="string" comment="备注说明" nullable="true" controlType="easyui-numberbox" input_tablename="f_active_item" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="活动价" search_compare=""/>
+</table>

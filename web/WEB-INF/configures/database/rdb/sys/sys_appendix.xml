@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<table name="sys_appendix">
+  <columns>
+    <column name="id" field="id" type="string" comment="ID" length="32" nullable="false" iskey="true" isAutoGenerate="true"/>
+    <column name="fk_message_id" field="fk_message_id" type="string" comment="消息ID" length="32" nullable="false"/>
+    <column name="fk_appx_id" field="fk_appx_id" type="string" comment="附件ID" length="32" nullable="false"/>
+    <column name="hash_code" field="hash_code" type="string" comment="哈希码" length="50" nullable="false"/>
+  </columns>
+</table>

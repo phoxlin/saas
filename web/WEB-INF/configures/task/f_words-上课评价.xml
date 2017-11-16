@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <task code="f_words" name="上课评价" load-on-startup="1" isTask="N" isFirstTask="N" left_col_number="0" right_col_number="12">
+    <decision/>
+    <content>
+      <legend type="data-grid" code="f_words" name="f_words" rdb="Y" autoLoadingData="N" initSql="select * from f_words" entity="f_words" column_show_num="2" spaceWidth="40" titleWidth="90" inputWidth="170" winWidth="700" winHeight="500">
+        <toolbars>
+          <toolbar class="btn-primary" text="详细信息" js="detail" name="detail" visible_code="f_words_detail"/>
+          <toolbar class="btn-primary" text="添加" js="add" name="add" visible_code="f_words_add"/>
+          <toolbar class="btn-primary" text="修改" js="edit" name="edit" visible_code="f_words_edit"/>
+          <toolbar class="btn-danger" text="删除" js="del" name="del" visible_code="f_words_del"/>
+        </toolbars>
+        <columns>
+          <column code="id" display="ID" width="100" length="24" format="" show="Y" send="Y" sort="Y" nullable="Y" ignore="N" edit="N" hidden="Y" readonly="N" line="N" query="Y" placeholder="ID" bindType="no" bindData="" controlType="easyui-validatebox" defaultValue="" tablename="f_words" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare=""/>
+          <column code="gym" display="GYM" width="100" length="50" format="" show="Y" send="Y" sort="Y" nullable="Y" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="GYM" bindType="no" bindData="" controlType="easyui-validatebox" defaultValue="" tablename="f_words" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare=""/>
+          <column code="cust_name" display="CUST_NAME" width="100" length="50" format="" show="Y" send="Y" sort="Y" nullable="Y" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="CUST_NAME" bindType="no" bindData="" controlType="easyui-validatebox" defaultValue="" tablename="f_words" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare=""/>
+          <column code="mem_id" display="MEM_ID" width="100" length="24" format="" show="Y" send="Y" sort="Y" nullable="Y" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="MEM_ID" bindType="no" bindData="" controlType="easyui-validatebox" defaultValue="" tablename="f_words" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare=""/>
+          <column code="type" display="类型" width="100" length="20" format="" show="Y" send="Y" sort="Y" nullable="Y" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="类型" bindType="no" bindData="" controlType="easyui-validatebox" defaultValue="" tablename="f_words" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare=""/>
+          <column code="pri_order_id" display="上课ID" width="100" length="24" format="" show="Y" send="Y" sort="Y" nullable="Y" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="上课ID" bindType="no" bindData="" controlType="easyui-validatebox" defaultValue="" tablename="f_words" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare=""/>
+          <column code="cent" display="评价分数" width="100" length="20" format="" show="Y" send="Y" sort="Y" nullable="Y" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="评价分数" bindType="no" bindData="" controlType="easyui-numberbox" defaultValue="" tablename="f_words" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare=""/>
+          <column code="content" display="评价内容" width="100" length="100" format="" show="Y" send="Y" sort="Y" nullable="N" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="评价内容" bindType="no" bindData="" controlType="textarea" defaultValue="" tablename="f_words" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare=""/>
+          <column code="state" display="STATE" width="100" length="20" format="" show="Y" send="Y" sort="Y" nullable="Y" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="STATE" bindType="no" bindData="" controlType="easyui-validatebox" defaultValue="" tablename="f_words" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare=""/>
+        </columns>
+      </legend>
+    </content>
+  </task>
+</root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<table name="f_body_data" comment="体测数据">
+  <column name="id" field="id" type="string" comment="ID" length="24" nullable="false" controlType="easyui-validatebox" input_tablename="" width="100" min="0" max="" decamial="0" otherset="" placeholder="" search_compare="" iskey="true" isAutoGenerate="true"/>
+  <column name="cust_name" field="cust_name" type="string" comment="cust_name" length="100" nullable="false" controlType="easyui-validatebox" input_tablename="" width="100" min="0" max="" decamial="0" otherset="" placeholder="" search_compare=""/>
+  <column name="gym" field="gym" type="string" comment="gym" length="100" nullable="false" controlType="easyui-validatebox" input_tablename="" width="100" min="0" max="" decamial="0" otherset="" placeholder="" search_compare=""/>
+  <column name="mem_id" field="mem_id" type="string" comment="会员" length="24" nullable="false" controlType="easyui-validatebox" input_tablename="" width="100" min="0" max="" decamial="0" otherset="" placeholder="" search_compare=""/>
+  <column name="content" field="content" type="text" comment="内容" length="-1" nullable="true" controlType="textarea" input_tablename="" width="100" min="0" max="" decamial="0" otherset="" placeholder="" search_compare=""/>
+  <column name="create_time" field="create_time" type="datetime" comment="创建时间" nullable="false" controlType="easyui-datetimebox" input_tablename="" width="100" min="0" max="" decamial="0" otherset="" placeholder="" search_compare=""/>
+  <column name="pt_id" field="pt_id" type="string" comment="教练" length="24" nullable="true" controlType="easyui-validatebox" input_tablename="" width="100" min="0" max="" decamial="0" otherset="" placeholder="" search_compare=""/>
+</table>

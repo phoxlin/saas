@@ -1,0 +1,17 @@
+@CHARSET "UTF-8";
+.custom-btn{padding: 0.25rem 0.7rem;border-radius: 0;text-align: center;border: 0;}
+.custom-btn-primary{
+	background: #fcf428 !important; color: #000 !important;
+}
+.custom-btn-plain-primary{
+	border: 1px solid #fcf428;color: #fcf428;background: transparent;
+}
+.custom-btn.disabled{
+	background: #ccc !important;color: #888;border: 0;
+}
+.custom-btn.button-fill{
+	height: 2.4rem;line-height: 2;
+	display: block;font-size: 0.85rem;
+}
+.button-default,
+.button.button-fill.button-default{color: #666;background: #fafafa;}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<table name="f_other_pay" comment="其他收费信息">
+	<column name="id" field="id" type="string" comment="ID" length="24" nullable="false" controlType="easyui-validatebox" input_tablename="f_order" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="ID" search_compare="" iskey="true" isAutoGenerate="true" />
+
+	<column name="mem_id" field="mem_id" type="string" length="24" comment="会员ID" nullable="false" />
+	<column name="emp_id" field="emp_id" type="string" length="24" comment="员工ID" nullable="false" />
+	<column name="pay_type" field="pay_type" type="string" length="24" comment="支付类型" nullable="false" />
+	<!-- 支付通用字段开始 -->
+	<column name="real_amt" field="real_amt" type="long" comment="实收金额" nullable="true" />
+	<column name="ca_amt" field="ca_amt" type="long" comment="应收金额" nullable="true" />
+	<column name="cash_amt" field="cash_amt" type="long" comment="现金" nullable="true" />
+	<column name="card_cash_amt" field="card_cash_amt" type="long" comment="储值卡" nullable="true" />
+	<column name="card_amt" field="card_amt" type="long" comment="银行卡" nullable="true" />
+	<column name="vouchers_amt" field="vouchers_amt" type="long" comment="代金券" nullable="true" />
+	<column name="vouchers_num" field="vouchers_num" type="long" comment="代金券号码" nullable="true" />
+	<column name="wx_amt" field="wx_amt" type="long" comment="微信支付" nullable="true" />
+	<column name="ali_amt" field="ali_amt" type="long" comment="支付宝支付" nullable="true" />
+
+	<column name="is_free" field="is_free" length="20" type="string" comment="免单" nullable="true" />
+	<column name="staff_account" length="20" field="staff_account" type="string" comment="挂账" nullable="true" />
+	<column name="print" field="print" length="20" type="string" comment="打印小票" nullable="true" />
+	<column name="send_msg" field="send_msg" length="20" type="string" comment="发送短信" nullable="true" />
+	<column name="pay_way" field="pay_way" length="20" type="string" comment="支付方式" nullable="true" />
+	<column name="pay_time" format="yyyy-MM-dd HH:mm:ss" field="pay_time" type="datetime" comment="支付时间" nullable="true" />
+	<!-- 支付通用字段结束 -->
+</table>

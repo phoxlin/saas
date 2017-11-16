@@ -1,0 +1,165 @@
+/*超出省略*/
+.line-one{display: block;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;word-break: keep-all;}
+
+/*头部*/
+.header-bg{
+	width: 100%;min-width: 1400px;height: 100px;
+	background: transparent url("../images/header_bg.jpg") no-repeat left top;
+	background-size: 100% 100%;color: #fff;font-size: 30px
+}
+.header-bg>.container{width: 1300px !important;}
+.header-bg .slogan{
+	position: absolute;left: 78px;top:62px;
+	font-size: 16px;color: #e5e5e5;
+}
+.icon-msg, .icon-setting, .icon-help{
+	display: inline-block;width: 25px;height: 30px;margin-right: 8px;vertical-align: middle;
+	background-repeat: no-repeat;background-size: contain;background-position: center center;
+}
+.icon-help{width: 20px;height: 20px;}
+.icon-msg{
+	background-image: url("../images/msg.png");
+}
+.icon-setting{
+	background-image: url("../images/setting.png");
+}
+.icon-help{
+	background-image: url("../images/help.png");
+}
+.header-bg i.new {
+	position: absolute;top: 30%;left: 83%;
+	display: inline-block;
+	padding: 3px;
+	line-height: 1.2;
+	border-radius: 50%;
+	font-style: normal;
+	color: #fff;
+	background: #a9d86e;
+	font-size: 13px;
+}
+.header-bg .head{width: 40px;height: 40px;border-radius: 50%;}
+.icon-more {
+	display: inline-block;
+	width: 16px;
+	height: 8px;
+	margin-left: 5px;
+	background: url("../images/arrow_down.png") no-repeat center center;
+	background-size: contain;
+}
+
+.me-info:hover {
+	cursor: pointer;
+}
+
+.hover-menu {
+	width: 200px;
+	height: auto;
+	background:  #fff;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
+	border-radius: 3px;
+	position: absolute;
+	right: 0;
+	top: 80px;
+	z-index: 4;
+	display: none;
+	text-align: left;
+}
+.me-info:hover .hover-menu, .hover-menu:hover .hover-menu {
+	display: block;
+}
+
+.menu-info {
+	color: #666;
+	height: 80px;
+	position: relative;
+	z-index: 1;
+	border-radius: 3px 3px 0 0;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	background: rgba(0, 0, 0, 0.5);
+}
+.menu-arrow {
+	width: 0;
+	height: 0;
+	background-size: cover;
+	background-position: center center;
+	position: absolute;
+	right: 100px;
+	top: -10px;
+	z-index: 1;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid #fff;
+}
+.menu-layer {
+	width: 100%;
+	height: 100%;
+	border-radius: 3px 3px 0 0;
+	background-size: cover;
+	background-position: center center;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: 2;
+	opacity: .2;
+	filter: alpha(opacity = 20);
+}
+
+.menu-header {
+	display: block;
+	padding: 15px 0 0 15px;
+	position: relative;
+	z-index: 3;
+}
+
+.user-photo {
+	width: 45px;
+	height: 45px;
+	margin: 3px;
+	background-repeat: no-repeat;
+}
+
+.user-photo-box, .user-photo {
+	width: 45px;
+	height: 45px;
+	display: inline-block;
+	margin-right: 20px;
+	vertical-align: middle;
+	background-position: center center;
+	border-radius: 50%;
+}
+
+.desc-box, .desc-box a {
+	color: #666;
+	font-size: 14px;
+}
+
+.desc-box a:hover {
+	text-decoration: none;
+}
+
+.desc-link {
+	padding-top: 10px;
+	list-style: none;
+	-webkit-padding-start: 0;
+}
+
+.desc-link .list-item {
+	float: none;
+	clear: both;
+}
+
+.desc-link a {
+	line-height: 35px;
+	display: block;
+	margin: 0;
+	padding-left: 12px;
+}
+
+.desc-link .link-item:LAST-CHILD a {
+	border-radius: 0 0 3px 3px;
+}
+
+.desc-link a:hover {
+	background-color: rgba(0, 0, 0, 0.1);
+	color: #ffba00;
+}

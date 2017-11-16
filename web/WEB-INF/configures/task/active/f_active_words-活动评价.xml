@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <task code="f_active_words" name="活动评价" load-on-startup="1" isTask="N" isFirstTask="N" left_col_number="0" right_col_number="12">
+    <decision/>
+    <content>
+      <legend type="data-grid" code="f_active_words" name="活动评价" rdb="Y" autoLoadingData="N" initSql="select * from f_active_words" entity="f_active_words" column_show_num="2" spaceWidth="40" titleWidth="90" inputWidth="170" winWidth="700" winHeight="500">
+        <toolbars>
+          <toolbar class="btn-primary" text="详细信息" js="detail" name="detail" visible_code="f_active_words_detail"/>
+          <toolbar class="btn-primary" text="添加" js="add" name="add" visible_code="f_active_words_add"/>
+          <toolbar class="btn-primary" text="修改" js="edit" name="edit" visible_code="f_active_words_edit"/>
+          <toolbar class="btn-danger" text="删除" js="del" name="del" visible_code="f_active_words_del"/>
+        </toolbars>
+        <columns>
+          <column code="id" display="ID" width="100" length="24" format="" show="N" send="Y" sort="Y" nullable="N" ignore="N" edit="Y" hidden="Y" readonly="N" line="N" query="Y" placeholder="ID" bindType="no" bindData="" controlType="easyui-validatebox" defaultValue="" tablename="f_active_words" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare=""/>
+          <column code="act_id" display="活动名称" width="200" length="24" format="" show="Y" send="Y" sort="Y" nullable="Y" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="活动ID" bindType="sql" bindData="select id code,title note from f_active" controlType="easyui-combobox" defaultValue="" tablename="f_active_words" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare=""/>
+          <column code="create_time" display="评论时间" width="180" length="100" format="yyyy-MM-dd HH:mm:ss" show="Y" send="Y" sort="Y" nullable="Y" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="评论时间" bindType="no" bindData="" controlType="easyui-datetimebox" defaultValue="" tablename="f_active_words" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare="gt"/>
+          <column code="fk_user_id" display="评论人ID" width="100" length="24" format="" show="N" send="Y" sort="Y" nullable="Y" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="评论人ID" bindType="" bindData="" controlType="easyui-combobox" defaultValue="" tablename="f_active_words" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare=""/>
+          <column code="mem_name" display="评论人" width="100" length="24" format="" show="Y" send="Y" sort="Y" nullable="Y" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="评论人ID" bindType="" bindData="" controlType="easyui-combobox" defaultValue="" tablename="f_active_words" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare=""/>
+          <column code="fk_user_gym" display="评论人所在会所" width="150" length="24" format="" show="Y" send="Y" sort="Y" nullable="Y" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="评论人GYM" bindType="sql" bindData="select gym code,gym_name note from f_gym" controlType="easyui-combobox" defaultValue="" tablename="f_active_words" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare=""/>
+          <column code="cent" display="分数" width="100" length="100" format="" show="Y" send="Y" sort="Y" nullable="Y" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="分数" bindType="no" bindData="" controlType="easyui-numberbox" defaultValue="" tablename="f_active_words" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare=""/>
+          <column code="content" display="评论内容" width="100" length="400" format="" show="Y" send="Y" sort="Y" nullable="N" ignore="N" edit="Y" hidden="N" readonly="N" line="Y" query="Y" placeholder="评论内容" bindType="no" bindData="" controlType="textarea" defaultValue="" tablename="f_active_words" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare=""/>
+        </columns>
+        <javaFun class="com.mingsokj.fitapp.tool.hook.ActiveWordsHook"/>
+      </legend>
+    </content>
+  </task>
+</root>

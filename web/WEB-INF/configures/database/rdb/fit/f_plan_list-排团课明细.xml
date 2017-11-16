@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<table name="f_plan_list" comment="排团课明细">
+  <column name="id" field="id" type="string" comment="ID" length="24" nullable="false" controlType="easyui-validatebox" input_tablename="f_plan_list" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="ID" search_compare="" iskey="true" isAutoGenerate="true"/>
+  <column name="cust_name" field="cust_name" type="string" comment="CUST_NAME" length="50" nullable="false" controlType="easyui-validatebox" input_tablename="f_plan_list" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="CUST_NAME" search_compare=""/>
+  <column name="gym" field="gym" type="string" comment="GYM" length="50" nullable="false" controlType="easyui-validatebox" input_tablename="f_plan_list" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="GYM" search_compare=""/>
+  <column name="plan_id" field="plan_id" type="string" comment="团课id" length="24" nullable="false" controlType="easyui-validatebox" input_tablename="" width="100" min="0" max="" decamial="0" otherset="" placeholder="" search_compare=""/>
+  <column name="op_id" field="op_id" type="string" comment="操作人id" length="24" nullable="false" controlType="easyui-validatebox" input_tablename="" width="100" min="0" max="" decamial="0" otherset="" placeholder="" search_compare=""/>
+  <column name="start_time" field="start_time" type="datetime" comment="开始时间" nullable="false" controlType="easyui-datetimebox" input_tablename="f_plan_list" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="开始时间" search_compare=""/>
+  <column name="end_time" field="end_time" type="datetime" comment="结束时间" nullable="false" controlType="easyui-datetimebox" input_tablename="f_plan_list" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="结束时间" search_compare=""/>
+  <column name="create_time" field="create_time" type="datetime" comment="创建时间" nullable="false" controlType="easyui-datetimebox" input_tablename="f_plan_list" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="结束时间" search_compare=""/>
+  <column name="state" field="state" type="string" comment="状态" length="20" nullable="true" controlType="easyui-validatebox" input_tablename="f_plan_list" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="状态" search_compare=""/>
+</table>

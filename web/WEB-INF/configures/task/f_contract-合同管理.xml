@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <task code="f_contract" name="合同管理" load-on-startup="1" isTask="N" isFirstTask="N" left_col_number="0" right_col_number="12">
+    <decision/>
+    <content>
+      <legend type="data-grid" code="f_contract" name="合同管理" rdb="Y" autoLoadingData="N" initSql="select * from f_contract" entity="f_contract" column_show_num="2" spaceWidth="40" titleWidth="90" inputWidth="170" winWidth="700" winHeight="500">
+        <toolbars>
+          <toolbar class="btn-primary" text="详细信息" js="detail" name="detail" visible_code="f_contract_detail"/>
+          <toolbar class="btn-primary" text="添加" js="add" name="add" visible_code="f_contract_add"/>
+          <toolbar class="btn-primary" text="修改" js="edit" name="edit" visible_code="f_contract_edit"/>
+          <toolbar class="btn-danger" text="删除" js="del" name="del" visible_code="f_contract_del"/>
+        </toolbars>
+        <columns>
+          <column code="id" display="id" width="100" length="100" format="" show="N" send="Y" sort="Y" nullable="Y" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="" bindType="no" bindData="" controlType="easyui-validatebox" defaultValue="" tablename="f_contract" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare=""/>
+          <column code="gym" display="gym" width="100" length="100" format="" show="Y" send="Y" sort="Y" nullable="Y" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="" bindType="no" bindData="" controlType="easyui-validatebox" defaultValue="" tablename="f_contract" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare=""/>
+          <column code="cust_name" display="cust_name" width="100" length="100" format="" show="Y" send="Y" sort="Y" nullable="Y" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="" bindType="no" bindData="" controlType="easyui-validatebox" defaultValue="" tablename="f_contract" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare=""/>
+          <column code="type" display="合同类型" width="100" length="20" format="" show="Y" send="Y" sort="Y" nullable="Y" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="" bindType="codetable" bindData="CONTRACT_TYPE" controlType="easyui-combobox" defaultValue="" tablename="f_contract" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare=""/>
+          <column code="content" display="合同内容" width="100" length="100" format="" show="Y" send="Y" sort="Y" nullable="Y" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="" bindType="no" bindData="" controlType="editor" defaultValue="" tablename="f_contract" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare=""/>
+          <column code="state" display="状态" width="100" length="500" format="" show="Y" send="Y" sort="Y" nullable="Y" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="" bindType="codetable" bindData="PUB_C001" controlType="easyui-combobox" defaultValue="" tablename="f_contract" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare=""/>
+        </columns>
+      </legend>
+    </content>
+  </task>
+</root>

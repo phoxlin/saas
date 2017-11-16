@@ -1,0 +1,71 @@
+@CHARSET "UTF-8";
+
+@media only screen and (min-width: 320px) {
+  html {
+    font-size: 17.06666666px !important;
+  }
+}
+@media only screen and (min-width: 375px) {
+  html {
+    font-size: 20px !important;
+  }
+}
+@media only screen and (min-width: 400px) {
+  html {
+    font-size: 21.33333333px !important;
+  }
+}
+@media only screen and (min-width: 414px) {
+  html {
+    font-size: 22.08px !important;
+  }
+}
+@media only screen and (min-width: 480px) {
+  html {
+    font-size: 25.6px !important;
+  }
+}
+
+.font-50{font-size: 0.5rem !important;}
+.font-55{font-size: 0.55rem !important;}
+.font-60{font-size: 0.6rem !important;}
+.font-65{font-size: 0.65rem !important;}
+.font-70{font-size: 0.7rem !important;}
+.font-75{font-size: 0.75rem !important;}
+.font-80{font-size: 0.8rem !important;}
+.font-85{font-size: 0.85rem !important;}
+.font-90{font-size: 0.9rem !important;}
+.font-95{font-size: 0.95rem !important;}
+.font-100{font-size: 1rem !important;}
+.font-bigger{font-size: 2rem !important;}
+
+.swiper-pagination-bullet{width: 6px;height: 6px;background: #fff;opacity: 1;}
+.swiper-pagination-bullet-active{background: #fcf428;opacity: 1;}
+.swiper-container-horizontal{height: 10rem;}
+.swiper-container-horizontal img{width: 100%;}
+
+.color-333{color: #333 !important;}
+.color-666{color: #666 !important;}
+.color-888{color: #888 !important;}
+.color-999{color: #999 !important;}
+.color-000{color: #000 !important;}
+.color-fff{color: #fff !important;}
+.color-ccc{color: #ccc !important;}
+.color-basic{color: #fcf428 !important;}
+.color-coach-detail-score{color: #96cefa !important;}
+.color-warn{color: #dd0000;}
+
+.row .col-70 {
+    margin-left: 4%;
+    width: 66%;
+}
+.row .col-30 {
+    margin-left: 4%;
+    width: 26%;
+}
+
+/*没有边框的列表*/
+.list-block.no-border .item-inner:after{height: 0;}
+
+/*超出省略*/
+.line-one{display: block;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;word-break: keep-all;}

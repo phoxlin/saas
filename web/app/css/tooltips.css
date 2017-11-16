@@ -1,0 +1,25 @@
+.tooltips-layer{
+	position: fixed;bottom: 0; left: 0;right: 0;
+	z-index: 1900000;background-color: rgba(0,0,0,.2);
+}
+.tooltips-layer .arrow-up{
+	position: absolute;width: 0;height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 10px solid #fff;
+}
+.tooltips-layer ul{
+	display: inline-block;position: absolute;top: 8px; max-height: 70%;
+    overflow-y: auto;margin: 0;border-radius: 3px;
+	-webkit-padding-start: 0px;background: #fff;list-style: none;
+}
+.tooltips-layer li{
+	padding: 8px 25px;border-bottom: 1px solid #e6e6e6;
+}
+.tooltips-layer li:LAST-CHILD{
+	border-bottom: 0;
+}
+.tooltips-layer li.active,
+.tooltips-active{
+	color: #fcf428 !important;
+}

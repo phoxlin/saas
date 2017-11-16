@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<table name="f_interact_pic" comment="健身圈图片">
+  <column name="id" field="id" type="string" comment="ID" length="24" nullable="false" controlType="easyui-validatebox" input_tablename="f_atricle" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="" search_compare="" iskey="true" isAutoGenerate="true"/>
+  <column name="cust_name" field="cust_name" type="string" comment="cust_name" length="100" nullable="false" controlType="easyui-validatebox" input_tablename="f_atricle" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="" search_compare=""/>
+  <column name="gym" field="gym" type="string" comment="gym" length="100" nullable="false" controlType="easyui-validatebox" input_tablename="f_atricle" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="" search_compare=""/>
+  <column name="interact_id" field="interact_id" type="string" comment="interact_id" length="24" nullable="false" controlType="easyui-validatebox" input_tablename="f_atricle" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="" search_compare="" iskey="true" isAutoGenerate="true"/>
+  <column name="pic_link" field="pic_link" type="string" comment="图片地址" length="100" nullable="false" controlType="easyui-validatebox" input_tablename="f_atricle" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="" search_compare="" iskey="true" isAutoGenerate="true"/>
+</table>

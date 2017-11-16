@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<table name="f_customer" comment="客户登记">
+  <column name="id" field="id" type="string" comment="id" length="100" nullable="false" controlType="easyui-validatebox" input_tablename="" width="100" min="0" max="" decamial="0" otherset="" placeholder="" search_compare="" iskey="true" isAutoGenerate="true"/>
+  <column name="addr" field="addr" type="string" comment="地址" length="100" nullable="false" controlType="easyui-validatebox" input_tablename="" width="100" min="0" max="" decamial="0" otherset="" placeholder="" search_compare=""/>
+  <column name="customer_name" field="customer_name" type="string" comment="俱乐部名称" length="100" nullable="false" controlType="easyui-validatebox" input_tablename="" width="100" min="0" max="" decamial="0" otherset="" placeholder="" search_compare=""/>
+  <column name="name" field="name" type="string" comment="联系人姓名" length="100" nullable="false" controlType="easyui-validatebox" input_tablename="" width="100" min="0" max="" decamial="0" otherset="" placeholder="" search_compare=""/>
+  <column name="phone" field="phone" type="string" comment="联系人电话" length="100" nullable="false" controlType="easyui-validatebox" input_tablename="" width="100" min="0" max="" decamial="0" otherset="" placeholder="" search_compare=""/>
+  <column name="REMARK" field="REMARK" type="string" comment="备注" length="100" nullable="true" controlType="easyui-validatebox" input_tablename="" width="100" min="0" max="" decamial="0" otherset="" placeholder="" search_compare=""/>
+  <column name="state" field="state" type="string" comment="状态" length="100" nullable="true" controlType="easyui-validatebox" input_tablename="" width="100" min="0" max="" decamial="0" otherset="" placeholder="" search_compare=""/>
+  <column name="create_time" field="create_time" type="datetime" comment="创建时间" nullable="false" controlType="easyui-datetimebox" input_tablename="" width="100" min="0" max="" decamial="0" otherset="" placeholder="" search_compare=""/>
+</table>

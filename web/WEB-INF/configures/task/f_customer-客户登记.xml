@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <task code="f_customer" name="客户登记" load-on-startup="1" isTask="N" isFirstTask="N" left_col_number="0" right_col_number="12">
+    <decision/>
+    <content>
+      <legend type="data-grid" code="f_customer" name="f_customer" rdb="Y" autoLoadingData="N" initSql="select * from f_customer" entity="f_customer" column_show_num="2" spaceWidth="40" titleWidth="90" inputWidth="170" winWidth="700" winHeight="500">
+        <toolbars>
+          <toolbar class="btn-primary" text="详细信息" js="detail" name="detail" visible_code="f_customer_detail"/>
+          <toolbar class="btn-primary" text="添加" js="add" name="add" visible_code="f_customer_add"/>
+          <toolbar class="btn-primary" text="修改" js="edit" name="edit" visible_code="f_customer_edit"/>
+          <toolbar class="btn-danger" text="删除" js="del" name="del" visible_code="f_customer_del"/>
+        </toolbars>
+        <columns>
+          <column code="id" display="id" width="100" length="100" format="" show="N" send="Y" sort="Y" nullable="Y" ignore="N" edit="Y" hidden="Y" readonly="N" line="N" query="Y" placeholder="" bindType="no" bindData="" controlType="easyui-validatebox" defaultValue="" tablename="f_customer" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare=""/>
+          <column code="customer_name" display="俱乐部名称" width="150" length="100" format="" show="Y" send="Y" sort="Y" nullable="Y" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="" bindType="no" bindData="" controlType="easyui-validatebox" defaultValue="" tablename="f_customer" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare=""/>
+          <column code="name" display="联系人姓名" width="150" length="100" format="" show="Y" send="Y" sort="Y" nullable="Y" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="" bindType="no" bindData="" controlType="easyui-validatebox" defaultValue="" tablename="f_customer" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare=""/>
+          <column code="phone" display="联系人电话" width="150" length="100" format="" show="Y" send="Y" sort="Y" nullable="Y" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="" bindType="no" bindData="" controlType="easyui-validatebox" defaultValue="" tablename="f_customer" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare=""/>
+          <column code="addr" display="地址" width="250" length="100" format="" show="Y" send="Y" sort="Y" nullable="Y" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="" bindType="no" bindData="" controlType="easyui-validatebox" defaultValue="" tablename="f_customer" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare=""/>
+          <column code="state" display="状态" width="100" length="100" format="" show="Y" send="Y" sort="Y" nullable="Y" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="" bindType="codetable" bindData="APPLY_STATE" controlType="easyui-validatebox" defaultValue="" tablename="f_customer" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare=""/>
+          <column code="create_time" display="创建时间" width="100" length="100" format="yyyy-MM-dd" show="Y" send="Y" sort="Y" nullable="Y" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="" bindType="no" bindData="" controlType="easyui-datetimebox" defaultValue="" tablename="f_customer" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare=""/>
+          <column code="remark" display="备注" width="250" length="100" format="" show="Y" send="Y" sort="Y" nullable="Y" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="" bindType="no" bindData="" controlType="easyui-validatebox" defaultValue="" tablename="f_customer" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare=""/>
+        </columns>
+      </legend>
+    </content>
+  </task>
+</root>

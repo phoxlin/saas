@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<table name="f_emp" comment="员工">
+  <column name="id" field="id" type="string" comment="ID" length="24" nullable="false" controlType="easyui-validatebox" input_tablename="f_emp" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="ID" search_compare="" iskey="true" isAutoGenerate="true"/>
+  <column name="cust_name" field="cust_name" type="string" comment="CUST_NAME" length="50" nullable="false" controlType="easyui-validatebox" input_tablename="f_emp" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="CUST_NAME" search_compare=""/>
+  <column name="gym" field="gym" type="string" comment="GYM" length="50" nullable="false" controlType="easyui-validatebox" input_tablename="f_emp" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="GYM" search_compare=""/>
+  <column name="login_name" field="login_name" type="string" comment="登录名" length="50" nullable="true" controlType="easyui-validatebox" input_tablename="f_emp" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="登录名" search_compare=""/>
+  <column name="pwd" field="pwd" type="string" comment="密码" length="50" nullable="true" controlType="easyui-validatebox" input_tablename="f_emp" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="密码" search_compare=""/>
+  <column name="pt" field="pt" type="string" comment="PT" length="20" nullable="true" controlType="easyui-validatebox" input_tablename="f_emp" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="PT" search_compare=""/>
+  <column name="mc" field="mc" type="string" comment="MC" length="20" nullable="true" controlType="easyui-validatebox" input_tablename="f_emp" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="MC" search_compare=""/>
+  <column name="op" field="op" type="string" comment="OP" length="20" nullable="true" controlType="easyui-validatebox" input_tablename="f_emp" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="OP" search_compare=""/>
+  <column name="ex_pt" field="ex_pt" type="string" comment="EX_PT" length="20" nullable="true" controlType="easyui-validatebox" input_tablename="f_emp" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="EX_PT" search_compare=""/>
+  <column name="ex_mc" field="ex_mc" type="string" comment="EX_MC" length="20" nullable="true" controlType="easyui-validatebox" input_tablename="f_emp" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="EX_MC" search_compare=""/>
+  <column name="state" field="state" type="string" comment="状态" length="20" nullable="false" controlType="easyui-validatebox" input_tablename="f_emp" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="状态" search_compare=""/>
+  <column name="labels" field="labels" type="string" comment="标签" length="100" nullable="true" controlType="easyui-validatebox" input_tablename="f_emp" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="标签" search_compare=""/>
+  <column name="summary" field="summary" type="string" comment="简介" length="400" nullable="true" controlType="easyui-validatebox" input_tablename="f_emp" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="简介" search_compare=""/>
+  <column name="content" field="content" type="text" comment="图文内容" length="65000" nullable="true" controlType="textarea" input_tablename="f_emp" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="图文内容" search_compare=""/>
+  <column name="sm" field="sm" type="string" comment="SM" length="20" nullable="true" controlType="easyui-validatebox" input_tablename="f_emp" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="SM" search_compare=""/>
+  <column name="pic1" field="pic1" type="string" comment="个人上传图片1" length="255" nullable="true" controlType="easyui-validatebox" input_tablename="f_emp" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="图片地址" search_compare=""/>
+  <column name="pic2" field="pic2" type="string" comment="个人上传图片2" length="255" nullable="true" controlType="easyui-validatebox" input_tablename="f_emp" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="图片地址" search_compare=""/>
+  <column name="pic3" field="pic3" type="string" comment="个人上传图片3" length="255" nullable="true" controlType="easyui-validatebox" input_tablename="f_emp" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="图片地址" search_compare=""/>
+</table>

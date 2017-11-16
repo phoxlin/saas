@@ -1,0 +1,119 @@
+<script type="text/html" id="cqIndexTpl">
+	<table id="<%=name%>Page_table" class="easyui-datagrid" title="<%=PageTitle%>" style="width:550px;height:250px"
+		url="msLoad2" pagination="true"  data-options="rownumbers:true" >
+	</table>
+</script>
+					
+
+<script type="text/html" id="msIndexTpl">
+<table id="<%=name%>Page_table" class="easyui-datagrid" title="<%=list.title%>" style="min-height:<%=table_height%>"
+					            data-options="rownumbers:true,singleSelect:false,method:'get',toolbar:'#tb',fit:true,pagination:true,multiSort:true,pageSize:20">
+					        <thead>
+					            <tr>
+									<%
+										var head = list.head;
+										if(head != null && head.length > 0){
+											for(var i=0; i<head.length; i++){
+												var item = head[i];
+												var isShow = item.show;
+												var ignore=item.ignore;
+									%>
+						                <th data-options="field:'<%=item.code%>',width:<%=item.width%>,sortable:<%=item.sort%>,hidden:<%=!isShow%> <% if(item.ignore){  %> ,formatter:format_<%=item.code%> <% } %>" ><%=item.display%></th>
+									<%			
+											}
+										}
+									%>
+					            </tr>
+					        </thead>
+					        <tbody>
+								<%
+									var data = list.rows;
+									
+									var head = list.head;
+									if(data != null && data.length > 0){
+										for(var i=0; i<data.length; i++){
+											var tr = data[i];
+											%>
+											<tr>
+											<%
+											if(head != null && head.length > 0){
+												for(var j=0; j<head.length; j++){
+													var item = head[j];
+													var isShow = item.show;
+													var code = item.code;
+													var display = tr[code];
+													if(display==null||display.length<=0){
+														display="";
+													}
+											%>
+												<td><%=display%></td>
+											<%			
+												}
+											}
+											%>
+											</tr>
+											<%
+										}
+									}
+								%>
+					        </tbody>
+					    </table>
+					    <div id="tb" style="padding:5px;height:auto">
+							<div style="margin-bottom:5px">
+								<%
+									var toolbars = list.toolbars;
+									if(toolbars != null && toolbars.length > 0){
+										for(var i=0; i<toolbars.length; i++){
+											var item = toolbars[i];
+								%>
+									<a name="<%=item.name%>" href="javascript:<%=item.js%>('<%=name%>','ms','msLoad')" class="easyui-linkbutton" iconCls="<%=item._class%>" plain="true"><%=item.text%></a>
+								<%			
+											
+										}
+									}
+								%>
+							</div>
+							<div id="<%=name%>_search_panel">
+								<%
+									if(filter != null && filter.length > 0){
+								%>
+									<table>
+								<%
+										var rowspan = Math.ceil(filter.length/3);
+										var isSearch = false;
+										for(var i=0; i<filter.length; i++){
+											var item = filter[i];
+											var padding = "padding: 0 5px 0 15px;";
+											if(i%3 == 0){
+												padding = "padding-right:5px;";
+								%>
+									<tr style="height:32px;">
+								<%
+											}
+								%>
+										<td style="<%=padding%>"><%=item.label%></td>
+										<td><input class="easyui-validatebox" data-options="required:false" name="<%=item.rownum%>_<%=item.colnum%>_<%=item.columnname%>" id="<%=item.rownum%>_<%=item.colnum%>_<%=item.columnname%>" type="<%=item.type%>"/></td>
+								<%
+											if(i%3 == 2 || (filter.length <= 3 && i == filter.length -1)){
+												if(!isSearch){
+													isSearch = true;
+								%>
+										<td rowspan="<%=rowspan%>"><a style="margin-left:10px;" href="javascript:searchFor('<%=name%>');" class="easyui-linkbutton" iconCls="icon-search">Search</a></td>
+								<%
+											}
+								%>
+									</tr>
+								<%
+											}
+										}
+								%>
+									</table>
+								<%
+									}
+								%>
+							</div>
+						</div>
+					
+					
+					</script>
+					

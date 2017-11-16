@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<table name="f_mem_recommend" comment="会员转介绍">
+  <column name="id" field="id" type="string" comment="id" length="100" nullable="false" controlType="easyui-validatebox" input_tablename="" width="100" min="0" max="" decamial="0" otherset="" placeholder="" search_compare="" iskey="true" isAutoGenerate="true"/>
+  <column name="be_recommend_mem_id" field="be_recommend_mem_id" type="string" comment="被推荐人id" length="100" nullable="false" controlType="easyui-validatebox" input_tablename="" width="100" min="0" max="" decamial="0" otherset="" placeholder="" search_compare=""/>
+  <column name="recommend_mem_id" field="recommend_mem_id" type="string" comment="推荐人id" length="100" nullable="false" controlType="easyui-validatebox" input_tablename="" width="100" min="0" max="" decamial="0" otherset="" placeholder="" search_compare=""/>
+  <column name="op_time" field="op_time" type="datetime" comment="推荐时间"  nullable="false" controlType="easyui-validatebox" input_tablename="" width="100" min="0" max="" decamial="0" otherset="" placeholder="" search_compare=""/>
+</table>

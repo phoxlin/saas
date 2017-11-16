@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<table name="f_contract" comment="合同管理">
+  <column name="id" field="id" type="string" comment="id" length="100" nullable="false" controlType="easyui-validatebox" input_tablename="" width="100" min="0" max="" decamial="0" otherset="" placeholder="" search_compare="" iskey="true" isAutoGenerate="true"/>
+  <column name="gym" field="gym" type="string" comment="gym" length="100" nullable="false" controlType="easyui-validatebox" input_tablename="" width="100" min="0" max="" decamial="0" otherset="" placeholder="" search_compare=""/>
+  <column name="cust_name" field="cust_name" type="string" comment="cust_name" length="100" nullable="false" controlType="easyui-validatebox" input_tablename="" width="100" min="0" max="" decamial="0" otherset="" placeholder="" search_compare=""/>
+  <column name="type" field="type" type="string" comment="合同类型" length="20" nullable="false" bindType="codetable" bindData="CONTRACT_TYPE" controlType="easyui-combobox" input_tablename="" width="100" min="0" max="" decamial="0" otherset="" placeholder="" search_compare=""/>
+  <column name="content" field="content" type="text" comment="合同内容" length="-1" nullable="true" controlType="editor" input_tablename="" width="100" min="0" max="" decamial="0" otherset="" placeholder="" search_compare=""/>
+  <column name="state" field="state" type="string" comment="状态" length="20" nullable="false" bindType="codetable" bindData="PUB_C001" controlType="easyui-combobox" input_tablename="" width="100" min="0" max="" decamial="0" otherset="" placeholder="" search_compare=""/>
+</table>

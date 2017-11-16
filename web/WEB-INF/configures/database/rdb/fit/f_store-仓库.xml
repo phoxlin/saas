@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<table name="f_store" comment="仓库">
+  <column name="id" field="id" type="string" comment="ID" length="24" nullable="false" controlType="easyui-validatebox" input_tablename="f_store" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="ID" search_compare="" iskey="true" isAutoGenerate="true"/>
+  <column name="pid" field="pid" type="string" comment="PID" length="24" nullable="false" controlType="easyui-validatebox" input_tablename="f_store" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="PID" search_compare=""/>
+  <column name="cust_name" field="cust_name" type="string" comment="CUST_NAME" length="50" nullable="false" controlType="easyui-validatebox" input_tablename="f_store" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="CUST_NAME" search_compare=""/>
+  <column name="gym" field="gym" type="string" comment="GYM" length="50" nullable="false" controlType="easyui-validatebox" input_tablename="f_store" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="GYM" search_compare=""/>
+  <column name="store_name" field="store_name" type="string" comment="仓库名称" length="200" nullable="false" controlType="easyui-validatebox" input_tablename="f_store" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="仓库名称" search_compare=""/>
+  <column name="state" field="state" type="string" comment="状态" length="20" nullable="false" controlType="easyui-validatebox" input_tablename="f_store" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="状态" search_compare=""/>
+</table>

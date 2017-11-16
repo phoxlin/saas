@@ -1,0 +1,67 @@
+@CHARSET "UTF-8";
+.one-line {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.real-price {
+    vertical-align: bottom;
+    margin-top: 10px;
+}
+.color-price {
+    color: #ff4400;
+}
+.title {
+    font-size: 18px;
+}
+.content {
+    color: #333333;
+    font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+}
+.inline {
+    display: inline-block;
+    margin-left: 5px;
+}
+.inline p {
+    margin: 0;
+}
+.pay-type .row {
+    border-bottom: 1px solid #ebebeb;
+    padding: 10px;
+    margin: 0;
+}
+.pay-type .col-md-6, .pay-type .col-xs-6 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.pay-type input {
+    height: 28px;width: 82px;
+    border: 1px solid #e0e0e0;
+    border-radius: 3px;
+    padding: 0 5px;
+    font-size: 14px;
+}
+.color-remark {
+    color: #cccccc;
+}
+.flow-detail {
+    margin-top: 10px;
+    font-size: 14px;
+}
+.flow-detail span {
+    color: #666666;
+}
+.flow-detail label, .pay-type label {
+    font-weight: 100;
+}
+.flow-detail select {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border: 1px solid #e0e0e0;
+    border-radius: 3px;
+    padding: 5px 6px;
+    min-width: 50px;
+    background: url(../images/pay/down.png) no-repeat scroll right center transparent;
+    padding-right: 50px;
+}

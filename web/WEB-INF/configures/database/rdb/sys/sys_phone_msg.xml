@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<table name="sys_phone_msg">
+  <columns>
+    <column name="id" field="id" type="string" comment="ID" length="32" nullable="false" iskey="true" isAutoGenerate="true"/>
+    <column name="msg_num" field="msg_num" type="string" comment="消息编号" length="20" nullable="false"/>
+    <column name="phones" field="phones" type="string" comment="收件人电话" length="4000" nullable="false"/>
+    <column name="content" field="content" type="string" comment="消息内容" length="4000" nullable="false"/>
+    <column name="create_time" field="create_time" type="datetime" format="yyyy-MM-dd HH:mm:ss" comment="创建时间" nullable="false"/>
+    <column name="msg_size" field="msg_size" type="long" comment="大小" nullable="false"/>
+    <column name="status" field="status" type="string" comment="状态" length="20" nullable="false"/>
+    <column name="remark" field="remark" type="string" comment="备注" length="4000" nullable="true"/>
+    <column name="platform" field="platform" type="string" comment="平台名称" length="100" nullable="false"/>
+    <column name="plat_url" field="plat_url" type="string" comment="短信URL" length="400" nullable="false"/>
+    <column name="plat_login_name" field="plat_login_name" type="string" comment="短信账号" length="100" nullable="false"/>
+    <column name="plat_pwd" field="plat_pwd" type="string" comment="短信密码" length="100" nullable="false"/>
+  </columns>
+</table>

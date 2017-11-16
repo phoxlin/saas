@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <task code="f_plan_detail" name="团课排期明细" load-on-startup="1" isTask="N" isFirstTask="N" left_col_number="0" right_col_number="12">
+    <decision/>
+    <content>
+      <legend type="data-grid" code="f_plan_detail" name="团课排期明细" rdb="Y" autoLoadingData="N" initSql="select * from f_plan_detail" entity="f_plan_detail" column_show_num="2" spaceWidth="40" titleWidth="90" inputWidth="170" winWidth="700" winHeight="500">
+        <toolbars>
+          <toolbar class="btn-primary" text="详细信息" js="detail" name="detail" visible_code="f_plan_detail_detail"/>
+          <toolbar class="btn-primary" text="添加" js="add" name="add" visible_code="f_plan_detail_add"/>
+          <toolbar class="btn-primary" text="修改" js="edit" name="edit" visible_code="f_plan_detail_edit"/>
+          <toolbar class="btn-danger" text="删除" js="del" name="del" visible_code="f_plan_detail_del"/>
+        </toolbars>
+        <columns>
+          <column code="id" display="id" width="100" length="24" format="" show="Y" send="Y" sort="Y" nullable="Y" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="" bindType="no" bindData="" controlType="easyui-validatebox" defaultValue="" tablename="f_plan_detail" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare=""/>
+          <column code="gym" display="gym" width="100" length="50" format="" show="Y" send="Y" sort="Y" nullable="Y" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="" bindType="no" bindData="" controlType="easyui-validatebox" defaultValue="" tablename="f_plan_detail" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare=""/>
+          <column code="cust_name" display="cust_name" width="100" length="50" format="" show="Y" send="Y" sort="Y" nullable="Y" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="" bindType="no" bindData="" controlType="easyui-validatebox" defaultValue="" tablename="f_plan_detail" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare=""/>
+          <column code="plan_list_id" display="排课明细id" width="100" length="24" format="" show="Y" send="Y" sort="Y" nullable="Y" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="" bindType="no" bindData="" controlType="easyui-validatebox" defaultValue="" tablename="f_plan_detail" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare=""/>
+          <column code="week" display="星期" width="100" length="24" format="" show="Y" send="Y" sort="Y" nullable="N" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="" bindType="no" bindData="" controlType="easyui-validatebox" defaultValue="" tablename="f_plan_detail" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare=""/>
+          <column code="statr_time" display="开始时间" width="100" length="100" format="" show="Y" send="Y" sort="Y" nullable="N" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="" bindType="no" bindData="" controlType="easyui-datetimebox" defaultValue="" tablename="f_plan_detail" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare=""/>
+          <column code="end_time" display="结束" width="100" length="100" format="" show="Y" send="Y" sort="Y" nullable="N" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="" bindType="no" bindData="" controlType="easyui-datetimebox" defaultValue="" tablename="f_plan_detail" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare=""/>
+        </columns>
+      </legend>
+    </content>
+  </task>
+</root>

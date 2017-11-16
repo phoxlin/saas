@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<table name="f_msg_send" comment="发送消息">
+  <column name="id" field="id" type="string" comment="id" length="24" nullable="false" controlType="easyui-validatebox" input_tablename="" width="100" min="0" max="" decamial="0" otherset="" placeholder="" search_compare="" iskey="true" isAutoGenerate="true"/>
+  <column name="gym" field="gym" type="string" comment="gym" length="24" nullable="false" controlType="easyui-validatebox" input_tablename="" width="100" min="0" max="" decamial="0" otherset="" placeholder="" search_compare=""/>
+  <column name="cust_name" field="cust_name" type="string" comment="cust_name" length="24" nullable="false" controlType="easyui-validatebox" input_tablename="" width="100" min="0" max="" decamial="0" otherset="" placeholder="" search_compare=""/>
+  <column name="mem_id" field="mem_id" type="string" comment="会员id" length="24" nullable="true" controlType="easyui-validatebox" input_tablename="" width="100" min="0" max="" decamial="0" otherset="" placeholder="" search_compare=""/>
+  <column name="op_id" field="op_id" type="string" comment="操作人" length="24" nullable="true" controlType="easyui-validatebox" input_tablename="" width="100" min="0" max="" decamial="0" otherset="" placeholder="" search_compare=""/>
+  <column name="phone" field="phone" type="string" comment="接收人电话" length="50" nullable="true" controlType="easyui-validatebox" input_tablename="" width="100" min="0" max="" decamial="0" otherset="" placeholder="" search_compare=""/>
+  <column name="content" field="content" type="string" comment="发送内容" length="100" nullable="true" controlType="easyui-validatebox" input_tablename="" width="100" min="0" max="" decamial="0" otherset="" placeholder="" search_compare=""/>
+ <column name="create_time" field="create_time" type="datetime" format="yyyy-MM-dd HH:mm:ss" comment="创建时间" nullable="false" controlType="easyui-datetimebox" input_tablename="f_user_card" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="创建时间" search_compare="" />
+  <column name="type" field="type" type="string" comment="消息类型" length="100" nullable="false" controlType="easyui-validatebox" input_tablename="" width="100" min="0" max="" decamial="0" otherset="" placeholder="" search_compare=""/>
+  <column name="state" field="state" type="string" comment="消息类型" length="24" nullable="false" controlType="easyui-validatebox" input_tablename="" width="100" min="0" max="" decamial="0" otherset="" placeholder="" search_compare=""/>
+</table>

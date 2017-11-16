@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<table name="f_class_record" comment="上课记录表">
+  <column name="id" field="id" type="string" comment="ID" length="24" nullable="true" controlType="easyui-validatebox" input_tablename="f_class_record" width="100" min="0" max="" decamial="0" otherset="" placeholder="" search_compare="" iskey="true" isAutoGenerate="true"/>
+  <column name="cust_name" field="cust_name" type="string" comment="CUST_NAME" length="100" nullable="true" controlType="easyui-validatebox" input_tablename="f_class_record" width="100" min="0" max="" decamial="0" otherset="" placeholder="" search_compare=""/>
+  <column name="gym" field="gym" type="string" comment="在哪个GYM上的课" length="100" nullable="false" controlType="easyui-validatebox" input_tablename="f_class_record" width="100" min="0" max="" decamial="0" otherset="" placeholder="" search_compare=""/>
+  <column name="pt_id" field="pt_id" type="string" comment="教练" length="24" nullable="false" controlType="easyui-validatebox" input_tablename="f_class_record" width="100" min="0" max="" decamial="0" otherset="" placeholder="" search_compare=""/>
+  <column name="plan_detail_id" field="plan_detail_id" type="string" comment="排期id" length="100" nullable="false" controlType="easyui-validatebox" input_tablename="f_class_record" width="100" min="0" max="" decamial="0" otherset="" placeholder="" search_compare=""/>
+  <column name="state" field="state" type="string" comment="状态" length="100" nullable="false" controlType="easyui-validatebox" input_tablename="f_class_record" width="100" min="0" max="" decamial="0" otherset="" placeholder="" search_compare=""/>
+  <column name="start_time" field="start_time" type="datetime" format="yyyy-MM-dd HH:mm:ss" comment="开始时间" nullable="true" controlType="easyui-datetimebox" input_tablename="f_class_record" width="100" min="0" max="" decamial="0" otherset="" placeholder="" search_compare=""/>
+  <column name="end_time" field="end_time" type="datetime" format="yyyy-MM-dd HH:mm:ss" comment="结束时间" nullable="true" controlType="easyui-datetimebox" input_tablename="f_class_record" width="100" min="0" max="" decamial="0" otherset="" placeholder="" search_compare=""/>
+  <column name="comment" field="comment" type="string" comment="会员反馈" length="1000" nullable="true" controlType="easyui-validatebox" input_tablename="f_class_record" width="100" min="0" max="" decamial="0" otherset="" placeholder="" search_compare=""/>
+  <column name="mem_nums" field="mem_nums" type="string" comment="上课人数" length="20" nullable="true" controlType="easyui-validatebox" input_tablename="f_class_record" width="100" min="0" max="" decamial="0" otherset="" placeholder="" search_compare=""/>
+  <column name="plan_id" field="plan_id" type="string" comment="课程id" length="30" nullable="true" controlType="easyui-validatebox" input_tablename="f_class_record" width="100" min="0" max="" decamial="0" otherset="" placeholder="" search_compare=""/>
+</table>

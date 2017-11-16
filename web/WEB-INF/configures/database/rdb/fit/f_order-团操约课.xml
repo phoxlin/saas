@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<table name="f_order" comment="团操约课">
+  <column name="id" field="id" type="string" comment="ID" length="24" nullable="false" controlType="easyui-validatebox" input_tablename="f_order" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="ID" search_compare="" iskey="true" isAutoGenerate="true"/>
+  <column name="cust_name" field="cust_name" type="string" comment="CUST_NAME" length="50" nullable="false" controlType="easyui-validatebox" input_tablename="f_order" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="CUST_NAME" search_compare=""/>
+  <column name="gym" field="gym" type="string" comment="GYM" length="50" nullable="false" controlType="easyui-validatebox" input_tablename="f_order" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="GYM" search_compare=""/>
+  <column name="mem_id" field="mem_id" type="string" comment="MEM_ID" length="24" nullable="false" controlType="easyui-validatebox" input_tablename="f_order" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="MEM_ID" search_compare=""/>
+  <column name="plan_list_id" field="plan_list_id" type="string" comment="排课ID" length="24" nullable="false" controlType="easyui-validatebox" input_tablename="f_order" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="排课ID" search_compare=""/>
+  <column name="plan_id" field="plan_id" type="string" comment="团课ID" length="24" nullable="false" controlType="easyui-validatebox" input_tablename="f_order" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="排课ID" search_compare=""/>
+  <column name="start_time" field="start_time" type="datetime" format="yyyy-MM-dd HH:mm:ss" comment="预约时间" nullable="false" controlType="easyui-datetimebox" input_tablename="f_order" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="预约时间" search_compare=""/>
+  <column name="op_time" field="op_time" type="datetime" format="yyyy-MM-dd HH:mm:ss" comment="操作时间" nullable="false" controlType="easyui-datetimebox" input_tablename="f_order" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="操作时间" search_compare=""/>
+  <column name="emp_id" field="emp_id" type="string" comment="预约教练" length="24" nullable="true" controlType="easyui-validatebox" input_tablename="f_order" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="预约教练" search_compare=""/>
+  <column name="on_time" field="on_time" type="datetime" format="yyyy-MM-dd HH:mm:ss" comment="上课时间" nullable="true" controlType="easyui-datetimebox" input_tablename="f_order" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="上课时间" search_compare=""/>
+  <column name="off_time" field="off_time" type="datetime" format="yyyy-MM-dd HH:mm:ss" comment="下课时间" nullable="true" controlType="easyui-datetimebox" input_tablename="f_order" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="下课时间" search_compare=""/>
+  <column name="state" field="state" type="string" comment="状态" length="20" nullable="false" controlType="easyui-validatebox" input_tablename="f_order" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="状态" search_compare=""/>
+  <column name="mem_nums" field="mem_nums" type="string" comment="已预约人数" length="20" nullable="false" controlType="easyui-validatebox" input_tablename="f_order" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="状态" search_compare=""/>
+  <column name="remark" field="remark" type="text" comment="备注" length="65000" nullable="true" controlType="textarea" input_tablename="f_order" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="备注" search_compare=""/>
+</table>

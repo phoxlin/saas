@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<table name="f_gym" comment="俱乐部">
+	<column name="id" field="id" type="string" comment="ID" length="24" nullable="false" controlType="easyui-validatebox" input_tablename="f_gym" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="ID" search_compare="" iskey="true" isAutoGenerate="true" />
+	<column name="cust_name" field="cust_name" type="string" comment="CUST_NAME" length="50" nullable="false" controlType="easyui-validatebox" input_tablename="f_gym" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="CUST_NAME" search_compare="" />
+	<column name="gym" field="gym" type="string" comment="GYM" length="50" nullable="false" controlType="easyui-validatebox" input_tablename="f_gym" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="GYM" search_compare="" />
+	<column name="gym_name" field="gym_name" type="string" comment="GYM_NAME" length="100" nullable="false" controlType="easyui-validatebox" input_tablename="f_gym" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="GYM_NAME" search_compare="" />
+	<column name="logo_url" field="logo_url" type="string" comment="LOGO_URL" length="255" nullable="true" controlType="easyui-validatebox" input_tablename="f_gym" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="LOGO_URL" search_compare="" />
+	<column name="background_url" field="background_url" type="string" comment="背景图" length="255" nullable="true" controlType="easyui-validatebox" input_tablename="f_gym" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="背景图" search_compare="" />
+	<column name="awords" field="awords" type="string" comment="俱乐部宣传语" length="400" nullable="true" controlType="easyui-validatebox" input_tablename="f_gym" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="俱乐部宣传语" search_compare="" />
+	<column name="addr" field="addr" type="string" comment="地址" length="200" nullable="true" controlType="easyui-validatebox" input_tablename="f_gym" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="地址" search_compare="" />
+	<column name="phone" field="phone" type="string" comment="电话" length="20" nullable="true" controlType="easyui-validatebox" input_tablename="f_gym" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="电话" search_compare="" />
+	<column name="baidu_addr" field="baidu_addr" type="string" comment="百度地图坐标" length="50" nullable="true" controlType="easyui-validatebox" input_tablename="f_gym" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="百度地图坐标" search_compare="" />
+	<column name="total_sms_num" field="total_sms_num" type="long" comment="累计短信条数" nullable="true" controlType="easyui-numberbox" input_tablename="f_gym" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="累计短信条数" search_compare="" />
+	<column name="remain_sms_num" field="remain_sms_num" type="long" comment="剩余短信条数" nullable="true" controlType="easyui-numberbox" input_tablename="f_gym" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="剩余短信条数" search_compare="" />
+	<column name="create_time" field="create_time" type="datetime" format="yyyy-MM-dd HH:mm:ss" comment="创建时间" nullable="true" />
+	<column name="deadline" field="deadline" type="datetime" format="yyyy-MM-dd HH:mm:ss" comment="截止日期" nullable="true" />
+	<column name="renew_time" field="renew_time" type="datetime" format="yyyy-MM-dd HH:mm:ss" comment="上次续费时间" nullable="true" />
+	<column name="sales_name" field="sales_name" type="string" comment="销售员" length="100" nullable="true" />
+
+</table>

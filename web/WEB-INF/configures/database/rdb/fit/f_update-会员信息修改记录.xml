@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<table name="f_update" comment="会员信息修改记录">
+	<column name="id" field="id" type="string" comment="ID" length="24" nullable="true" controlType="easyui-validatebox" input_tablename="f_atricle" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="" search_compare="" iskey="true" isAutoGenerate="true" />
+	<column name="fk_user_id" field="fk_user_id" type="string" comment="会员ID" length="24" nullable="false" />
+	<column name="old_msg" field="old_msg" type="text" comment="原始信息" length="-1" nullable="true" />
+	<column name="new_msg" field="new_msg" type="text" comment="修改信息" length="-1" nullable="true" />
+	<column name="create_time" field="create_time" format="yyyy-MM-dd HH:mm:ss" type="datetime" comment="修改时间" nullable="true" />
+	<column name="fk_create_id" field="fk_create_id" length="24" type="string" comment="修改人" nullable="true" />
+	<column name="type" field="type" length="24" type="string" comment="类型" nullable="true" />
+</table>

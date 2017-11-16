@@ -1,0 +1,205 @@
+/*********  登录   ********/
+body, html {
+	font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial,
+		sans-serif;
+}
+.bg {
+	width: 100%;
+	min-height: 100%;
+	background: url("../images/login_bg.jpg") center center no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter {
+	-webkit-filter: blur(15px);
+	-moz-filter: blur(15px);
+	-o-filter: blur(15px);
+	-ms-filter: blur(15px);
+	filter: blur(15px);
+}
+
+.login_bg {
+	width: 450px;
+	margin: 0 auto;
+	padding-top: 10%;
+}
+
+.login_bg .header {
+	text-align: center;
+}
+
+.login_bg .header div {
+	display: inline-block;
+	text-align: center;
+}
+
+.logo {
+	display: inline-block;
+	width: 60%;
+}
+
+.logo img {
+/* 	width: 70px; */
+	max-width: 220px;
+	margin-bottom: 10px;
+}
+
+.c p {
+	color: #fff;
+	width: 100%;
+	text-align: center;
+	letter-spacing: 1px;
+}
+.login-panel{
+	width: 100%;position: relative;
+	padding: 50px 30px;
+	margin-top: 50px;
+	background: #fff;
+	border-radius: 5px;
+}
+
+.input-container {
+	position: relative;
+	padding: 8px 0;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #f0f0f0;
+}
+
+.input-container span {
+	display: inline-block;
+	width: 10%;
+	height: 100%;
+}
+
+.input-container span i {
+	display: inline-block;
+	width: 55%;
+	height: 20px;
+	margin: 6px 10px;
+	background-position: center;
+}
+
+.input-container .user {
+	background-image: url("../images/name.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.input-container .pwd {
+	background-image: url("../images/pwd.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.input-container input {
+	position: absolute;
+	width: 80%;
+	padding-left: 4%;
+	line-height: 35px;
+	border: 0;
+	font-size: 16px;
+	color: #333;
+	background: transparent;
+}
+input:-webkit-autofill{
+	box-shadow: 0 0 0px 1000px #fff inset;
+	-webkit-box-shadow: 0 0 0px 1000px #fff inset;
+	-webkit-text-fill-color: #333 !important;
+}
+.input-container input:focus {
+	outline: none;
+	color: #333 !important;
+}
+.login-op{padding:10px 0 20px;color: #888;font-size: 15px;}
+.login-op a{
+	display: inline-block;width: 50%;float: right;text-align: right;color: #888 !important;
+	cursor: pointer;
+}
+.login-op input[type=checkbox]{
+	vertical-align: top;
+}
+
+.login-op {  
+    position: relative;  
+}  
+.login-op input[type=checkbox] {  
+    visibility: hidden;  
+}  
+.login-op label {  
+    cursor: pointer;  
+    position: absolute;  
+    width: 17px;  
+    height: 17px;  
+    top: 24%;  
+    left: 0;  
+    background: #fff;  
+    border:1px solid #bbb;  
+    -moz-border-radius: 2px;      /* Gecko browsers */  
+    -webkit-border-radius: 2px;   /* Webkit browsers */  
+    border-radius:2px;            /* W3C syntax */  
+}  
+.login-op label:after {  
+    opacity: 0;  
+    content: '';  
+    position: absolute;  
+    width: 10px;  
+    height: 6px;  
+    background: transparent;  
+    top: 3px;  
+    left: 3px;  
+    border: 3px solid #383a4c;  
+    border-top: none;  
+    border-right: none;  
+    -webkit-transform: rotate(-45deg);  
+    -moz-transform: rotate(-45deg);  
+    -o-transform: rotate(-45deg);  
+    -ms-transform: rotate(-45deg);  
+    transform: rotate(-45deg);  
+}  
+.login-op input[type=checkbox]:checked + label:after {  
+    opacity: 1;  
+}  
+
+
+
+.login-btn {
+	position: absolute;
+	display: block;
+	width: 80%;
+	left: 10%;
+	top: 90%;
+	padding: 15px 0;
+	font-size: 20px;
+	text-align: center;
+	text-decoration: none;
+	background-color: #fcfcfc;
+	color: #4f4f4f;
+	border-radius: 5px;
+}
+.login-btn.active{
+	background-color: #bbd416;
+	color: #fff;
+}
+
+.login-btn.active:focus, .login-btn.active:active {
+	outline: none;
+	background-color: #bbd416;
+	color: #fff;
+}
+.login-btn:hover{text-decoration: none;color: #fff;}
+.login-btn.active:hover {
+	color: #fff;
+}
+
+.icon-broswer{
+	width: 22px;height: 22px;display: inline-block;margin-right: 6px;
+	background: transparent url("../images/broswer.png") center center no-repeat;
+	background-size: contain;vertical-align: sub;
+}
+.icon-help{
+	width: 22px;height: 20px;display: inline-block;margin-right: 6px;
+	background: transparent url("../images/help.png") center center no-repeat;
+	background-size: contain;vertical-align: sub;
+}
+/*********  登录   ********/

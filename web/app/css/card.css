@@ -1,0 +1,22 @@
+@CHARSET "UTF-8";
+.mine-card-title{padding: 0.5rem 1rem; font-size: 0.7rem; color: #7B7B7B;}
+.mine-card{position: relative; box-shadow: none;color: #fff;margin: 1rem 1.5rem;border-radius: 0.5rem;}
+.mine-card .card-content{height: 9rem;}
+.mine-card img{width: 7rem;}
+
+.default-card{color: #fff;background: url("../images/card/card_default.png") no-repeat 100%;    background-size: 100%;}
+.card1{background: url("../images/card/card1.png") no-repeat 100%;    background-size: 100%;}
+.card2{background: url("../images/card/card2.png") no-repeat 100%;    background-size: 100%;}
+.card3{background: url("../images/card/card3.png") no-repeat 100%;    background-size: 100%;}
+
+.mine-card .card-name{margin: 0.35rem 0;color: #ccc;}
+.mine-card .price{padding: 0.15rem 0.5rem;border: 1px solid #fcf428;}
+.mine-card span.line{
+	width: 0.8rem;height: 0.25rem;display: inline-block;
+	border-top: 1px solid #fff;
+}
+.mine-card span.line:FIRST-CHILD{margin-right: 0.2rem; }
+.mine-card span.line:LAST-CHILD{margin-left: 0.2rem; }
+.mine-card .buyCardsCheckbox{
+	position: absolute;right: 0.5rem;bottom: 0.5rem;
+}

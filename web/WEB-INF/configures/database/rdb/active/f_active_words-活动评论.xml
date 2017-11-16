@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<table name="f_active_words" comment="活动评论">
+  <column name="id" field="id" type="string" comment="ID" length="24" nullable="false" controlType="easyui-validatebox" input_tablename="f_active_words" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="ID" search_compare="" iskey="true" isAutoGenerate="true"/>
+  <column name="act_id" field="act_id" type="string" comment="活动ID" length="24" nullable="false" controlType="easyui-validatebox" input_tablename="f_active_words" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="活动ID" search_compare=""/>
+  <column name="create_time" field="create_time" type="datetime" format="yyyy-MM-dd HH:mm:ss" comment="评论时间" nullable="false" controlType="easyui-datetimebox" input_tablename="f_active_words" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="评论时间" search_compare=""/>
+  <column name="fk_user_id" field="fk_user_id" type="string" comment="评论人ID" length="24" nullable="false" controlType="easyui-validatebox" input_tablename="f_active_words" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="评论人ID" search_compare=""/>
+  <column name="fk_user_gym" field="fk_user_gym" type="string" comment="评论人GYM" length="24" nullable="false" controlType="easyui-validatebox" input_tablename="f_active_words" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="评论人GYM" search_compare=""/>
+  <column name="cent" field="cent" type="long" comment="分数" nullable="false" controlType="easyui-numberbox" input_tablename="f_active_words" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="分数" search_compare=""/>
+  <column name="content" field="content" type="string" comment="评论内容" length="400" nullable="true" controlType="easyui-validatebox" input_tablename="f_active_words" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="评论内容" search_compare=""/>
+</table>

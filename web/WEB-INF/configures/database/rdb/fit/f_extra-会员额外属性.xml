@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<table name="f_extra" comment="会员额外属性">
+  <column name="id" field="id" type="string" comment="ID" length="24" nullable="false" controlType="easyui-validatebox" input_tablename="f_extra" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="ID" search_compare="" iskey="true" isAutoGenerate="true"/>
+  <column name="gym" field="gym" type="string" comment="门店代码" length="50" nullable="true" controlType="easyui-validatebox" input_tablename="f_extra" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="门店代码" search_compare=""/>
+  <column name="cust_name" field="cust_name" type="string" comment="健身房代码" length="50" nullable="true" controlType="easyui-validatebox" input_tablename="f_extra" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="健身房代码" search_compare=""/>
+  <column name="mem_id" field="mem_id" type="string" comment="会员ID" length="24" nullable="false" controlType="easyui-validatebox" input_tablename="f_extra" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="会员ID" search_compare=""/>
+  <column name="key_type" field="key_type" type="string" comment="KEY_TYPE" length="20" nullable="false" controlType="easyui-validatebox" input_tablename="f_extra" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="KEY_TYPE" search_compare=""/>
+  <column name="keyname" field="keyname" type="string" comment="KEYNAME" length="50" nullable="false" controlType="easyui-validatebox" input_tablename="f_extra" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="KEYNAME" search_compare=""/>
+  <column name="keyvalue" field="keyvalue" type="string" comment="KEYVALUE" length="400" nullable="false" controlType="easyui-validatebox" input_tablename="f_extra" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="KEYVALUE" search_compare=""/>
+</table>

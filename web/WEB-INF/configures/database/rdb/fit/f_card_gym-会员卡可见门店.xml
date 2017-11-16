@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<table name="f_card_gym" comment="会员卡可见门店">
+  <column name="id" field="id" type="string" comment="ID" length="24" nullable="false" controlType="easyui-validatebox" input_tablename="f_card_gym" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="ID" search_compare="" iskey="true" isAutoGenerate="true"/>
+  <column name="cust_name" field="cust_name" type="string" comment="CUST_NAME" length="50" nullable="false" controlType="easyui-validatebox" input_tablename="f_card_gym" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="CUST_NAME" search_compare=""/>
+  <column name="gym" field="gym" type="string" comment="GYM" length="50" nullable="false" controlType="easyui-validatebox" input_tablename="f_card_gym" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="GYM" search_compare=""/>
+  <column name="fk_card_id" field="fk_card_id" type="string" comment="卡种ID" length="24" nullable="true" controlType="easyui-validatebox" input_tablename="f_card_gym" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="卡种ID" search_compare=""/>
+  <column name="view_gym" field="view_gym" type="string" comment="可见门店" length="50" nullable="true" controlType="easyui-validatebox" input_tablename="f_card_gym" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="可见门店" search_compare=""/>
+</table>

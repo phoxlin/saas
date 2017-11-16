@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<table name="sys_mail_msg">
+  <columns>
+    <column name="id" field="id" type="string" comment="ID" length="100" nullable="false" iskey="true" isAutoGenerate="true"/>
+    <column name="msg_num" field="msg_num" type="string" comment="消息编号" length="20" nullable="false"/>
+    <column name="op_type" field="op_type" type="string" comment="收发存" length="20" nullable="false"/>
+    <column name="fk_mail_set_id" field="fk_mail_set_id" type="string" comment="邮件账号ID" length="32" nullable="false"/>
+    <column name="msg_title" field="msg_title" type="string" comment="标题" length="200" nullable="false"/>
+    <column name="create_time" field="create_time" type="datetime" format="yyyy-MM-dd HH:mm:ss" comment="时间" nullable="false"/>
+    <column name="msg_size" field="msg_size" type="long" comment="大小" nullable="false"/>
+    <column name="flag" field="flag" type="string" comment="标记" length="20" nullable="false"/>
+    <column name="hash_code" field="hash_code" type="string" comment="内容哈希ID" length="50" nullable="false"/>
+    <column name="is_appx" field="is_appx" type="string" comment="是否附件" length="20" nullable="false"/>
+    <column name="status" field="status" type="string" comment="状态" length="20" nullable="false"/>
+    <column name="remark" field="remark" type="string" comment="备注" length="4000" nullable="true"/>
+  </columns>
+</table>

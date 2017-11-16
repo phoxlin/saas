@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<table name="f_good_version" comment="商品规格">
+  <column name="id" field="id" type="string" comment="ID" length="24" nullable="false" controlType="easyui-validatebox" input_tablename="f_good_version" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="ID" search_compare="" iskey="true" isAutoGenerate="true"/>
+  <column name="cust_name" field="cust_name" type="string" comment="CUST_NAME" length="50" nullable="false" controlType="easyui-validatebox" input_tablename="f_good_version" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="CUST_NAME" search_compare=""/>
+  <column name="gym" field="gym" type="string" comment="GYM" length="50" nullable="false" controlType="easyui-validatebox" input_tablename="f_good_version" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="GYM" search_compare=""/>
+  <column name="goods_id" field="goods_id" type="string" comment="商品ID" length="24" nullable="false" controlType="easyui-validatebox" input_tablename="f_good_version" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="商品ID" search_compare=""/>
+  <column name="version" field="version" type="string" comment="商品规格" length="100" nullable="false" controlType="easyui-validatebox" input_tablename="f_good_version" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="商品规格" search_compare=""/>
+  <column name="goods_price" field="goods_price" type="string" comment="会员价" nullable="true" controlType="easyui-numberbox" input_tablename="f_good_version" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="会员价" search_compare=""/>
+  <column name="goods_bprice" field="goods_bprice" type="string" comment="商品进价" nullable="true" controlType="easyui-numberbox" input_tablename="f_good_version" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="商品进价" search_compare=""/>
+  <column name="emp_price" field="emp_price" type="string" comment="员工价" nullable="true" controlType="easyui-numberbox" input_tablename="f_good_version" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="员工价" search_compare=""/>
+  <column name="bar_code" field="bar_code" type="string" comment="条形码" length="100" nullable="true" controlType="easyui-validatebox" input_tablename="f_good_version" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="条形码" search_compare=""/>
+  <column name="store_id" field="store_id" type="string" comment="仓库ID" length="24" nullable="false" controlType="easyui-validatebox" input_tablename="f_good_version" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="仓库ID" search_compare=""/>
+  <column name="num" field="num" type="int" comment="库存" length="10" nullable="false" controlType="easyui-numberbox" input_tablename="f_good_version" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="库存" search_compare=""/>
+  <column name="sales_num" field="sales_num" type="int" comment="总销量" length="10" nullable="false" controlType="easyui-validatebox" input_tablename="f_good_version" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="总销量" search_compare=""/>
+</table>

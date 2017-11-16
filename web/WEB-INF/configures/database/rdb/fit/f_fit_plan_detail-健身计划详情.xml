@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<table name="f_fit_plan_detail" comment="健身计划详情">
+  <column name="id" field="id" type="string" comment="ID" length="24" nullable="false" controlType="easyui-validatebox" input_tablename="f_fit_plan_detail" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="ID" search_compare="" iskey="true" isAutoGenerate="true"/>
+  <column name="fit_plan_id" field="fit_plan_id" type="string" comment="计划ID" length="50" nullable="false" controlType="easyui-validatebox" input_tablename="f_fit_plan_detail" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="CUAT_NAME" search_compare=""/>
+  
+  <column name="start" field="start" type="datetime" comment="开始时间"  format="yyyy-MM-dd HH:mm:ss" nullable="true" controlType="easyui-validatebox" input_tablename="f_fit_plan_detail" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="卡ID" search_compare=""/>
+  <column name="end" field="end" type="datetime" comment="结束时间" format="yyyy-MM-dd HH:mm:ss" nullable="true" controlType="easyui-validatebox" input_tablename="f_fit_plan_detail" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="入场编号" search_compare=""/>
+  
+  <column name="plan_content" field="plan_content" type="string" comment="计划内容" length="500" nullable="true" controlType="easyui-validatebox" input_tablename="f_fit_plan_detail" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="状态" search_compare=""/>
+  <column name="mem_say" field="mem_say" type="string" comment="会员评价" length="255" nullable="true" controlType="easyui-validatebox" input_tablename="f_fit_plan_detail" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="状态" search_compare=""/>
+  <column name="pt_say" field="pt_say" type="string" comment="教练回复" length="255" nullable="true" controlType="easyui-validatebox" input_tablename="f_fit_plan_detail" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="状态" search_compare=""/>
+  <column name="num" field="num" type="int" comment="第几节" length="10" nullable="true" controlType="easyui-validatebox" input_tablename="f_fit_plan_detail" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="状态" search_compare=""/>
+  
+  <column name="mem_confirm" field="mem_confirm" type="string" comment="会员确认" length="20" nullable="true" controlType="easyui-validatebox" input_tablename="f_fit_plan_detail" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="状态" search_compare=""/>
+  <column name="pt_confirm" field="pt_confirm" type="string" comment="教练确认" length="20" nullable="true" controlType="easyui-validatebox" input_tablename="f_fit_plan_detail" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="状态" search_compare=""/>
+  <column name="mem_confirm_time" field="mem_confirm_time" type="datetime" comment="会员创建时间" format="yyyy-MM-dd HH:mm:ss" nullable="true" controlType="easyui-validatebox" input_tablename="f_fit_plan_detail" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="入场编号" search_compare=""/>
+  <column name="pt_confirm_time" field="pt_confirm_time" type="datetime" comment="教练创建时间" format="yyyy-MM-dd HH:mm:ss" nullable="true" controlType="easyui-validatebox" input_tablename="f_fit_plan_detail" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="入场编号" search_compare=""/>
+</table>

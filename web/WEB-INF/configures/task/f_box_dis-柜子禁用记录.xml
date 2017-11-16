@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <task code="f_box_dis" name="柜子禁用记录" load-on-startup="1" isTask="N" isFirstTask="N" left_col_number="0" right_col_number="12">
+    <decision/>
+    <content>
+      <legend type="data-grid" code="f_box_dis" name="柜子禁用记录" rdb="Y" autoLoadingData="N" initSql="select * from f_box_dis" entity="f_box_dis" column_show_num="2" spaceWidth="40" titleWidth="90" inputWidth="170" winWidth="700" winHeight="500">
+        <toolbars>
+          <toolbar class="btn-primary" text="详细信息" js="detail" name="detail" visible_code="f_box_dis_detail"/>
+          <toolbar class="btn-primary" text="添加" js="add" name="add" visible_code="f_box_dis_add"/>
+          <toolbar class="btn-primary" text="修改" js="edit" name="edit" visible_code="f_box_dis_edit"/>
+          <toolbar class="btn-danger" text="删除" js="del" name="del" visible_code="f_box_dis_del"/>
+        </toolbars>
+        <columns/>
+      </legend>
+    </content>
+  </task>
+</root>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<table name="f_goods" comment="商品">
+  <column name="id" field="id" type="string" comment="ID" length="24" nullable="false" controlType="easyui-validatebox" input_tablename="f_goods" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="ID" search_compare="" iskey="true" isAutoGenerate="true"/>
+  <column name="cust_name" field="cust_name" type="string" comment="CUST_NAME" length="50" nullable="false" controlType="easyui-validatebox" input_tablename="f_goods" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="CUST_NAME" search_compare=""/>
+  <column name="gym" field="gym" type="string" comment="GYM" length="50" nullable="false" controlType="easyui-validatebox" input_tablename="f_goods" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="GYM" search_compare=""/>
+  <column name="type" field="type" type="string" comment="分类" length="50" nullable="false" controlType="easyui-validatebox" input_tablename="f_goods" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="分类" search_compare=""/>
+  <column name="first_letter" field="first_letter" type="string" comment="商品首字母" length="50" nullable="true" controlType="easyui-validatebox" input_tablename="f_goods" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="商品首字母" search_compare=""/>
+  <column name="goods_name" field="goods_name" type="string" comment="商品名称" length="50" nullable="false" controlType="easyui-validatebox" input_tablename="f_goods" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="商品名称" search_compare=""/>
+  <column name="goods_price" field="goods_price" type="string" comment="商品售价" nullable="true" controlType="easyui-numberbox" input_tablename="f_goods" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="商品售价" search_compare=""/>
+  <column name="goods_bprice" field="goods_bprice" type="string" comment="商品进价" nullable="true" controlType="easyui-numberbox" input_tablename="f_goods" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="商品进价" search_compare=""/>
+  <column name="emp_price" field="emp_price" type="string" comment="员工价" nullable="true" controlType="easyui-numberbox" input_tablename="f_goods" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="员工价" search_compare=""/>
+  <column name="create_time" field="create_time" type="datetime" format="yyyy-MM-dd HH:mm:ss" comment="创建时间" nullable="true" controlType="easyui-datetimebox" input_tablename="f_goods" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="创建时间" search_compare=""/>
+  <column name="state" field="state" type="string" comment="状态" length="50" nullable="false" controlType="easyui-validatebox" input_tablename="f_goods" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="状态" search_compare=""/>
+  <column name="pic_url" field="pic_url" type="string" comment="图片地址" length="255" nullable="true" controlType="easyui-validatebox" input_tablename="f_goods" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="图片地址" search_compare=""/>
+  <column name="labels" field="labels" type="string" comment="标签" length="100" nullable="true" controlType="easyui-validatebox" input_tablename="f_goods" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="标签" search_compare=""/>
+  <column name="summary" field="summary" type="string" comment="简介" length="400" nullable="true" controlType="easyui-validatebox" input_tablename="f_goods" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="简介" search_compare=""/>
+  <column name="content" field="content" type="text" comment="图文内容" length="65000" nullable="true" controlType="textarea" input_tablename="f_goods" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="图文内容" search_compare=""/>
+</table>

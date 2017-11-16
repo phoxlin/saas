@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<table name="f_pre_fee" comment="付定金">
+  <column name="id" field="id" type="string" comment="ID" length="24" nullable="false" controlType="easyui-validatebox" input_tablename="f_pre_fee" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="ID" search_compare="" iskey="true" isAutoGenerate="true"/>
+  <column name="cuat_name" field="cuat_name" type="string" comment="CUAT_NAME" length="50" nullable="false" controlType="easyui-validatebox" input_tablename="f_pre_fee" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="CUAT_NAME" search_compare=""/>
+  <column name="gym" field="gym" type="string" comment="GYM" length="50" nullable="false" controlType="easyui-validatebox" input_tablename="f_pre_fee" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="GYM" search_compare=""/>
+  <column name="pay_amt" field="pay_amt" type="long" comment="定金" nullable="false" controlType="easyui-numberbox" input_tablename="f_pre_fee" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="定金" search_compare=""/>
+  <column name="user_amt" field="user_amt" type="long" comment="抵扣" nullable="false" controlType="easyui-numberbox" input_tablename="f_pre_fee" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="抵扣" search_compare=""/>
+  <column name="state" field="state" type="string" comment="状态" length="20" nullable="false" controlType="easyui-validatebox" input_tablename="f_pre_fee" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="状态" search_compare=""/>
+  <column name="mem_id" field="mem_id" type="string" comment="会员ID" length="24" nullable="false" controlType="easyui-validatebox" input_tablename="f_pre_fee" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="会员ID" search_compare=""/>
+  <column name="emp_id" field="emp_id" type="string" comment="员工ID" length="24" nullable="false" controlType="easyui-validatebox" input_tablename="f_pre_fee" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="员工ID" search_compare=""/>
+  <column name="user_time" field="user_time" type="datetime" format="yyyy-MM-dd HH:mm:ss" comment="使用时间" nullable="true" controlType="easyui-datetimebox" input_tablename="f_pre_fee" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="使用时间" search_compare=""/>
+  <column name="op_time" field="op_time" type="datetime" format="yyyy-MM-dd HH:mm:ss" comment="付款时间" nullable="false" controlType="easyui-datetimebox" input_tablename="f_pre_fee" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="付款时间" search_compare=""/>
+</table>

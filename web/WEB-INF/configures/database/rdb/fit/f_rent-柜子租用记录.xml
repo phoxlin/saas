@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<table name="f_rent" comment="柜子租用记录">
+  <column name="id" field="id" type="string" comment="ID" length="24" nullable="false" controlType="easyui-validatebox" input_tablename="f_rent" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="ID" search_compare="" iskey="true" isAutoGenerate="true"/>
+  <column name="cust_name" field="cust_name" type="string" comment="CUST_NAME" length="50" nullable="false" controlType="easyui-validatebox" input_tablename="f_rent" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="CUST_NAME" search_compare=""/>
+  <column name="gym" field="gym" type="string" comment="GYM" length="50" nullable="false" controlType="easyui-validatebox" input_tablename="f_rent" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="GYM" search_compare=""/>
+  <column name="mem_id" field="mem_id" type="string" comment="会员ID" length="24" nullable="false" controlType="easyui-validatebox" input_tablename="f_rent" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="会员ID" search_compare=""/>
+  <column name="box_id" field="box_id" type="string" comment="柜子ID" length="24" nullable="false" controlType="easyui-validatebox" input_tablename="f_rent" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="柜子ID" search_compare=""/>
+  <column name="start_time" field="start_time" type="datetime" format="yyyy-MM-dd HH:mm:ss" comment="开始时间" nullable="false" controlType="easyui-datetimebox" input_tablename="f_rent" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="开始时间" search_compare=""/>
+  <column name="end_time" field="end_time" type="datetime" format="yyyy-MM-dd HH:mm:ss" comment="结束时间" nullable="false" controlType="easyui-datetimebox" input_tablename="f_rent" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="结束时间" search_compare=""/>
+  <column name="rent_remark" field="rent_remark" type="text" comment="租借备注" length="65000" nullable="true" controlType="textarea" input_tablename="f_rent" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="租借备注" search_compare=""/>
+  <column name="emp_id" field="emp_id" type="string" comment="操作人ID" length="24" nullable="false" controlType="easyui-validatebox" input_tablename="f_rent" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="操作人ID" search_compare=""/>
+  <column name="op_time" field="op_time" type="datetime" format="yyyy-MM-dd HH:mm:ss" comment="操作时间" nullable="false" controlType="easyui-datetimebox" input_tablename="f_rent" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="操作时间" search_compare=""/>
+  <column name="no_rent_time" field="no_rent_time" type="datetime" format="yyyy-MM-dd HH:mm:ss" comment="退柜时间" nullable="true" controlType="easyui-datetimebox" input_tablename="f_rent" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="退柜时间" search_compare=""/>
+  <column name="no_rent_remark" field="no_rent_remark" type="text" comment="退柜备注" length="65000" nullable="true" controlType="textarea" input_tablename="f_rent" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="退柜备注" search_compare=""/>
+  <column name="rent_deposit_amt" field="rent_deposit_amt" type="long" comment="租柜押金" nullable="true" controlType="easyui-numberbox" input_tablename="f_rent" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="租柜押金" search_compare=""/>
+  <column name="no_rent_deposit_amt" field="no_rent_deposit_amt" type="long" comment="退还押金" nullable="true" controlType="easyui-numberbox" input_tablename="f_rent" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="退还押金" search_compare=""/>
+  <column name="state" field="state" type="string" comment="状态" length="20" nullable="false" controlType="easyui-validatebox" input_tablename="f_rent" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="状态" search_compare=""/>
+<column name="rent_box_amt" field="rent_box_amt" type="long" comment="租柜价格" nullable="false" />
+<!-- 支付通用字段开始 -->
+	<column name="real_amt" field="real_amt" type="long" comment="实收金额" nullable="true" />
+	<column name="ca_amt" field="ca_amt" type="long" comment="应收金额" nullable="true" />
+	<column name="cash_amt" field="cash_amt" type="long" comment="现金" nullable="true" />
+	<column name="card_cash_amt" field="card_cash_amt" type="long" comment="储值卡" nullable="true" />
+	<column name="card_amt" field="card_amt" type="long" comment="银行卡" nullable="true" />
+	<column name="vouchers_amt" field="vouchers_amt" type="long" comment="代金券" nullable="true" />
+	<column name="vouchers_num" field="vouchers_num" type="long" comment="代金券号码" nullable="true" />
+	<column name="wx_amt" field="wx_amt" type="long" comment="微信支付" nullable="true" />
+	<column name="ali_amt" field="ali_amt" type="long" comment="支付宝支付" nullable="true" />
+
+	<column name="is_free" field="is_free" length="20" type="string" comment="免单" nullable="true" />
+	<column name="staff_account" length="20" field="staff_account" type="string" comment="挂账" nullable="true" />
+	<column name="print" field="print" length="20" type="string" comment="打印小票" nullable="true" />
+	<column name="send_msg" field="send_msg" length="20" type="string" comment="发送短信" nullable="true" />
+	<column name="pay_way" field="pay_way" length="20" type="string" comment="支付方式" nullable="true" />
+	<column name="pay_time" format="yyyy-MM-dd HH:mm:ss" field="pay_time" type="datetime" comment="支付时间" nullable="true" />
+
+</table>

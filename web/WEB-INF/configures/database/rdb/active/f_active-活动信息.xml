@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<table name="f_active" comment="会员活动">
+  <column name="id" field="id" type="string" comment="ID" length="24" nullable="true" controlType="easyui-validatebox" input_tablename="f_active" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="ID" search_compare="" iskey="true" isAutoGenerate="true"/>
+  <column name="cust_name" field="cust_name" type="string" comment="CUST_NAME" length="50" nullable="false" controlType="easyui-validatebox" input_tablename="f_active" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="CUST_NAME" search_compare=""/>
+  <column name="gym" field="gym" type="string" comment="GYM" length="50" nullable="false" controlType="easyui-validatebox" input_tablename="f_active" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="GYM" search_compare=""/>
+  <column name="title" field="title" type="string" comment="标题" length="400" nullable="false" controlType="easyui-validatebox" input_tablename="f_active" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="标题" search_compare=""/>
+  <column name="summary" field="summary" type="string" comment="简介" length="4000" nullable="true" controlType="easyui-validatebox" input_tablename="f_active" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="简介" search_compare=""/>
+  <column name="content" field="content" type="text" comment="详细图文介绍" length="-1" nullable="true" controlType="textarea" input_tablename="f_active" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="详细图文介绍" search_compare=""/>
+  <column name="start_time" field="start_time" type="datetime" comment="开始时间" nullable="false" controlType="easyui-datetimebox" input_tablename="" width="100" min="0" max="" decamial="0" otherset="" placeholder="" search_compare=""/>
+  <column name="end_time" field="end_time" type="datetime" comment="结束时间" nullable="false" controlType="easyui-datetimebox" input_tablename="" width="100" min="0" max="" decamial="0" otherset="" placeholder="" search_compare=""/>
+  <column name="create_time" field="create_time" type="datetime" comment="创建时间" nullable="false" controlType="easyui-datetimebox" input_tablename="f_active" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="创建时间" search_compare=""/>
+  <column name="fk_user_id" field="fk_user_id" type="string" comment="创建人" length="24" nullable="false" controlType="easyui-validatebox" input_tablename="f_active" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="创建人" search_compare=""/>
+  <column name="num" field="num" type="string" comment="参与次数" length="20" nullable="true" controlType="easyui-numberbox" input_tablename="f_active" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="参与次数" search_compare=""/>
+  <column name="is_share" field="is_share" type="string" comment="是否可以分享" length="20" nullable="false" controlType="easyui-validatebox" input_tablename="f_active" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="是否可以分享" search_compare=""/>
+  <column name="for_mem" field="for_mem" type="string" comment="是否是会员专属" length="20" nullable="false" controlType="easyui-validatebox" input_tablename="f_active" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="是否可以分享" search_compare=""/>
+  <column name="index_commend" field="index_commend" type="string" comment="首页推荐" length="20" nullable="false" controlType="easyui-validatebox" input_tablename="f_active" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="首页推荐" search_compare=""/>
+  <column name="state" field="state" type="string" comment="状态" length="20" nullable="false" controlType="easyui-validatebox" input_tablename="f_active" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="状态" search_compare=""/>
+  <column name="pic_url" field="pic_url" type="string" comment="图片" length="255" nullable="false" controlType="easyui-validatebox" input_tablename="f_active" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="图" search_compare=""/>
+</table>

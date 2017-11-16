@@ -1,0 +1,26 @@
+.main.main2{display: inline-block;}
+@media screen and (max-width: 2000px) and (min-width:1280px) {
+    .main.main2 {
+        width: 1230px;
+    }
+}
+.main.main2 div{width: 70%;margin: 0 auto;padding-top: 9%;}
+.main.main2 a.item{
+	display: inline-block; 
+	max-width: 330px; 
+	min-width: 200px;
+	height: 400px; 
+	padding: 40px 20px;
+	border: 1px solid #d8d8d8;
+	border-radius: 10px;
+	color: #333;
+	text-decoration: none !important;
+	text-align: center;
+}
+.main.main2 a.item:FIRST-CHILD{float: left;}
+.main.main2 a.item:LAST-CHILD{float: right;}
+.main.main2 a.item:hover{border: 1px solid #ffba00;background-color: rgba(255, 186, 0, 0.1);}
+.main.main2 a.item img{height: 200px;}
+.main.main2 a.item h3{font-weight: 600;font-size: 20px;}
+.main.main2 a.item label{padding: 8px 15px;font-weight: normal;text-align: left;}
+.main.main2 a.item label span{font-weight: 700;color: #dd0000;}

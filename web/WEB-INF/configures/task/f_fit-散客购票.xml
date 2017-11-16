@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <task code="f_fit" name="散客购票" load-on-startup="1" isTask="N" isFirstTask="N" left_col_number="0" right_col_number="12">
+    <decision/>
+    <content>
+      <legend type="data-grid" code="f_fit" name="散客购票" rdb="Y" autoLoadingData="N" initSql="select * from f_fit" entity="f_fit" column_show_num="2" spaceWidth="40" titleWidth="90" inputWidth="170" winWidth="700" winHeight="500">
+        <toolbars>
+          <toolbar class="btn-primary" text="详细信息" js="detail" name="detail" visible_code="f_fit_detail"/>
+          <toolbar class="btn-primary" text="添加" js="add" name="add" visible_code="f_fit_add"/>
+          <toolbar class="btn-primary" text="修改" js="edit" name="edit" visible_code="f_fit_edit"/>
+          <toolbar class="btn-danger" text="删除" js="del" name="del" visible_code="f_fit_del"/>
+        </toolbars>
+        <columns>
+          <column code="id" display="ID" width="100" length="24" format="" show="Y" send="Y" sort="Y" nullable="Y" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="ID" bindType="no" bindData="" controlType="easyui-validatebox" defaultValue="" tablename="f_fit" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare=""/>
+          <column code="cuat_name" display="CUAT_NAME" width="100" length="50" format="" show="Y" send="Y" sort="Y" nullable="Y" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="CUAT_NAME" bindType="no" bindData="" controlType="easyui-validatebox" defaultValue="" tablename="f_fit" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare=""/>
+          <column code="gym" display="GYM" width="100" length="50" format="" show="Y" send="Y" sort="Y" nullable="Y" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="GYM" bindType="no" bindData="" controlType="easyui-validatebox" defaultValue="" tablename="f_fit" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare=""/>
+          <column code="card_id" display="卡ID" width="100" length="24" format="" show="Y" send="Y" sort="Y" nullable="Y" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="卡ID" bindType="no" bindData="" controlType="easyui-validatebox" defaultValue="" tablename="f_fit" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare=""/>
+          <column code="checkin_no" display="入场编号" width="100" length="50" format="" show="Y" send="Y" sort="Y" nullable="Y" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="入场编号" bindType="no" bindData="" controlType="easyui-validatebox" defaultValue="" tablename="f_fit" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare=""/>
+          <column code="deadline" display="到期时间" width="100" length="100" format="yyyy-MM-dd HH:mm:ss" show="Y" send="Y" sort="Y" nullable="Y" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="到期时间" bindType="no" bindData="" controlType="easyui-datetimebox" defaultValue="" tablename="f_fit" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare=""/>
+          <column code="buy_time" display="购卡时间" width="100" length="100" format="yyyy-MM-dd HH:mm:ss" show="Y" send="Y" sort="Y" nullable="Y" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="购卡时间" bindType="no" bindData="" controlType="easyui-datetimebox" defaultValue="" tablename="f_fit" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare=""/>
+          <column code="emp_id" display="操作人" width="100" length="24" format="" show="Y" send="Y" sort="Y" nullable="N" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="操作人" bindType="no" bindData="" controlType="easyui-validatebox" defaultValue="" tablename="f_fit" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare=""/>
+          <column code="mem_id" display="会员ID" width="100" length="24" format="" show="Y" send="Y" sort="Y" nullable="N" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="会员ID" bindType="no" bindData="" controlType="easyui-validatebox" defaultValue="" tablename="f_fit" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare=""/>
+          <column code="real_amt" display="实收金额" width="100" length="100" format="" show="Y" send="Y" sort="Y" nullable="Y" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="实收金额" bindType="no" bindData="" controlType="easyui-numberbox" defaultValue="" tablename="f_fit" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare=""/>
+          <column code="state" display="状态" width="100" length="20" format="" show="Y" send="Y" sort="Y" nullable="Y" ignore="N" edit="Y" hidden="N" readonly="N" line="N" query="Y" placeholder="状态" bindType="no" bindData="" controlType="easyui-validatebox" defaultValue="" tablename="f_fit" decamial="0" min="0" max="10000" otherset="" col_class="" col_style="" cols="6" labelCols="4" fieldCols="6" inputHeight="50" inputSpanCol="1" search_compare=""/>
+        </columns>
+      </legend>
+    </content>
+  </task>
+</root>

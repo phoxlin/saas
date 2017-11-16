@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<table name="f_mem_maintain" comment="会员维护">
+	<column name="id" field="id" type="string" length="24" comment="ID" nullable="false" decamial="0" iskey="true" isAutoGenerate="true" />
+	<column name="cust_name" field="cust_name" length="100" type="string" comment="健身房代码" nullable="true" />
+	<column name="gym" field="gym" type="string"  length="100" comment="门店代码" nullable="true" />
+	<column name="mem_id" field="mem_id" type="string"  length="24" comment="会员ID" nullable="false" />
+	<column name="content" field="content" type="String"  length="1000" comment="维护内容" nullable="false" />
+	<column name="upcoming" field="upcoming" type="String"  length="24" comment="是否待办" nullable="true" />
+	<column name="upcoming_time" field="upcoming_time" type="datetime" comment="待办时间" nullable="true" />
+	<column name="op_id" field="op_id" type="String" comment="操作人ID"  length="24" nullable="false" />
+	<column name="op_time" field="op_time" type="datetime" comment="操作时间" nullable="false" />
+	<column name="type" field="type" type="string" comment="操作类型"  length="24" nullable="false" />
+</table>

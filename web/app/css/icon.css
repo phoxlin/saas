@@ -1,0 +1,462 @@
+@CHARSET "UTF-8";
+/*主页*/
+nav.bar-tab .tab-item .icon-homepage {
+    background-image: url(../images/icon/home/home.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+nav.bar-tab .tab-item.active .icon-homepage{
+	background-image: url(../images/icon/home/home2.png);
+}
+/*信息*/
+nav.bar-tab .tab-item .icon-msg {
+    background-image: url(../images/icon/home/msg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+nav.bar-tab .tab-item.active .icon-msg{
+	background-image: url(../images/icon/home/msg2.png);
+}
+/*俱乐部*/
+nav.bar-tab .tab-item .icon-club {
+    background-image: url(../images/icon/home/club.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+nav.bar-tab .tab-item.active .icon-club{
+	background-image: url(../images/icon/home/club2.png);
+}
+/*我的*/
+nav.bar-tab .tab-item .icon-mine {
+    background-image: url(../images/icon/home/mine.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+nav.bar-tab .tab-item.active .icon-mine{
+	background-image: url(../images/icon/home/mine2.png);
+}
+
+/*更多*/
+.icon.icon-f-add{
+	width: 1.1rem;height: 1.1rem;
+    background-image: url(../images/icon/add.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.icon.icon-f-add2{
+	width: 1.1rem;height: 1.1rem;
+    background-image: url(../images/icon/add2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/*铃铛*/
+.icon.icon-f-msg{
+	width: 1.1rem;height: 1rem;
+    background-image: url(../images/icon/msg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.icon.icon-f-msg2{
+	width: 1.1rem;height: 1rem;
+    background-image: url(../images/icon/msg2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/*分享*/
+.icon.icon-share2{
+	width: 1.1rem;height: 1.1rem;margin-top: 0.5rem;
+    background-image: url(../images/icon/share.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/*在线购卡*/
+.custom-icon .icon.icon-b1{
+    background-image: url(../images/icon/home/vip.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/*课程表*/
+.custom-icon .icon.icon-b2{
+    background-image: url(../images/icon/home/sjk.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/*私人教练*/
+.custom-icon .icon.icon-b3{
+    background-image: url(../images/icon/home/in.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/*课程表*/
+.custom-icon .icon.icon-b4{
+    background-image: url(../images/icon/home/gclass.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/*体验课*/
+.custom-icon .icon.icon-b5{
+    background-image: url(../images/icon/home/order.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/*为你推荐*/
+.custom-icon .icon.icon-b6{
+    background-image: url(../images/icon/home/b6.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/*圈聊*/
+.custom-icon .icon.icon-b7{
+    background-image: url(../images/icon/home/b7.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/*俱乐部活动*/
+.custom-icon .icon.icon-b8{
+    background-image: url(../images/icon/home/b8.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/*俱乐部动态*/
+.custom-icon .icon.icon-b9{
+    background-image: url(../images/icon/home/b9.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/*在线商城*/
+.custom-icon .icon.icon-b10{
+    background-image: url(../images/icon/home/b10.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/*健身日记*/
+.custom-icon .icon.icon-b11{
+    background-image: url(../images/icon/home/b11.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/*亲密度*/
+.custom-icon .icon.icon-b12{
+    background-image: url(../images/icon/home/b12.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/*签到排行*/
+.custom-icon .icon.icon-b13{
+    background-image: url(../images/icon/home/b13.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/*我的健身圈*/
+.icon-m1{
+	background-image: url(../images/icon/mine/m1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/*体测记录*/
+.icon-m2{
+	background-image: url(../images/icon/mine/m2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/*制作计划*/
+.icon-m3{
+	background-image: url(../images/icon/mine/m3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/*管理人员*/
+.icon-m4{
+	background-image: url(../images/icon/mine/m4.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/*我是教练*/
+.icon-m5{
+	background-image: url(../images/icon/mine/m5.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/*我是会籍*/
+.icon-m6{
+	background-image: url(../images/icon/mine/m6.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/*前台管理*/
+.icon-m7{
+	background-image: url(../images/icon/mine/m7.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/*设置*/
+.icon-m8{
+	background-image: url(../images/icon/mine/m8.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/*切换俱乐部*/
+.icon-m9{
+	background-image: url(../images/icon/mine/m9.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/*退出登录*/
+.icon-m10{
+	background-image: url(../images/icon/mine/m10.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/*会员推荐*/
+.icon-m11{
+	background-image: url(../images/icon/mine/m11.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/*我是老板*/
+.icon-m12{
+	background-image: url(../images/icon/mine/m12.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/*会籍主管*/
+.icon-m13{
+	background-image: url(../images/icon/mine/m13.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/*解绑微信*/
+.icon-m14{
+	background-image: url(../images/icon/mine/m14.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/*订单*/
+.icon-m15{
+	background-image: url(../images/icon/mine/m15.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/*体测数据*/
+.icon-m16{
+	background-image: url(../images/icon/mine/m16.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/*日历*/
+.icon-calendar{
+	display: inline-block;width: 1.5rem;height: 1.5rem;
+	background-image: url(../images/icon/calendar.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/*可见范围*/
+.icon-earth{
+	display: inline-block;width: 1.2rem;height: 1.2rem;
+	background-image: url(../images/icon/earth.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/*点赞*/
+.icon-zan{
+	display: inline-block;width: 1rem;height: 1rem;
+	background-image: url(../images/icon/zan.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.icon-zan2{
+	display: inline-block;width: 1rem;height: 1rem;
+	background-image: url(../images/icon/zan2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/*星星*/
+.icon-star2{
+	display: inline-block;width: 0.6rem;height: 0.6rem;
+	background-image: url(../images/icon/star2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.icon-star3{
+	display: inline-block;width: 0.6rem;height: 0.6rem;
+	background-image: url(../images/icon/star3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/*位置*/
+.icon-position{
+	display: inline-block;width: 1rem;height: 1rem;
+	background-image: url(../images/icon/position.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/*人*/
+.icon-user{
+	display: inline-block;width: 1rem;height: 1rem;
+	background-image: url(../images/icon/user.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/*爱心*/
+.icon-heart{
+	display: inline-block;width: 0.7rem;height: 0.6rem;
+	background-image: url(../images/icon/heart.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.icon-heart2{
+	display: inline-block;width: 0.7rem;height: 0.6rem;
+	background-image: url(../images/icon/heart2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/*电话*/
+.icon-calling{
+	display: inline-block;width: 1rem;height: 1rem;
+	background-image: url(../images/icon/calling.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/*会籍 扫一扫*/
+.icon-scan{
+	display: inline-block;width: 1.1rem;height: 1.1rem;
+	background-image: url(../images/sales/scan.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/*会籍 我的会员卡*/
+.icon-sales-card{
+	display: inline-block;width: 1rem;height: 1.4rem;
+	background-image: url(../images/sales/card.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/*会员维护*/
+.icon-v1{
+	display: inline-block;width: 1.55rem;height: 1.2rem;
+	background-image: url(../images/sales/v1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/*潜在客户*/
+.icon-v2{
+	display: inline-block;width: 1.55rem;height: 1.2rem;
+	background-image: url(../images/sales/v2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/*我的报表*/
+.icon-v3{
+	display: inline-block;width: 1.55rem;height: 1.2rem;
+	background-image: url(../images/sales/v3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/*销售记录*/
+.icon-v4{
+	display: inline-block;width: 1.55rem;height: 1.2rem;
+	background-image: url(../images/sales/v4.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.icon-v1,.icon-v2,.icon-v3,.icon-v4{margin-bottom: 0.4rem;}
+.icon-v1 + div,.icon-v2 + div,.icon-v3 + div,.icon-v4 + div{margin-bottom: 1.5rem;}
+/*高关注度*/
+.icon-g2{
+	display: inline-block;width: 0.6rem;height: 0.6rem;
+	background-image: url(../images/icon/g2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/*普通关注度*/
+.icon-g1{
+	display: inline-block;width: 0.6rem;height: 0.6rem;
+	background-image: url(../images/icon/g1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/*不维护*/
+.icon-g3{
+	display: inline-block;width: 0.6rem;height: 0.6rem;
+	background-image: url(../images/icon/g3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #999;
+}
+.icon-g1, .icon-g2, .icon-g3{
+	position: absolute;left: 2.4rem;top: 2.3rem;
+}
+
+/*悬浮添加按钮*/
+.fixed-add{
+	position: fixed; bottom: 0.75rem; left: 43%;
+	width: 2.6rem;height: 2.6rem;
+	background: transparent url("../images/icon/fixed_add.png") no-repeat center center;
+	background-size: contain;
+}
+/*健身日记-打卡*/
+.jour{
+	width: 2.2rem;height: 2.2rem;border-radius: 50%;display: inline-block;position: absolute;
+	box-shadow: 0 0 0 3px #f0f0f0, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+	background-repeat: no-repeat;background-size: 65% 65%;background-position: center center;
+}
+.jour-default{
+	background-image: url("../images/icon/jour/default.png");
+	background-color: #e6e6e6;
+}
+.jour-sign{
+	background-image: url("../images/icon/jour/sign.png");
+	background-color: #66AAFF;
+}
+.jour-checkin{
+	background-image: url("../images/icon/jour/checkin.png");
+	background-color: #FB8083;
+}
+.jour-checkout{
+	background-image: url("../images/icon/jour/checkin.png");
+	background-color: #BBD416;
+}
+.jour-buyCard{
+	background-image: url("../images/icon/jour/card.png");
+	background-color: #FCD281;
+}
+.jour-money{
+	background-image: url("../images/icon/jour/money.png");
+	background-color: #FA96E8;
+}
+.jour-holiday{
+	background-image: url("../images/icon/jour/holiday.png");
+	background-color: #FFB5C5;
+}
+/*皇冠图标*/
+.icon-1th, .icon-2th, .icon-3th{
+	position: absolute;
+	width: 1.6rem;height: 1.6rem;top: -1rem;left: 35.5%;
+	background-repeat: no-repeat;background-size: contain;background-position: center center;
+}
+.icon-1th{
+	width: 1.8rem;height: 1.8rem;top: -1.1rem;left: 35%;
+	background-image: url("../images/icon/1th.png");
+}
+.icon-2th{
+	background-image: url("../images/icon/2th.png");
+}
+.icon-3th{
+	background-image: url("../images/icon/3th.png");
+}
+/*会籍-会员卡*/
+.icon-mem-card, .icon-recharge-record, .icon-sign-record{
+	width: 48px;
+    height: 48px;
+    margin: 0.3rem;
+    background-size: contain;background-repeat: no-repeat;
+}
+.icon.icon-mem-card{
+    background-image: url(../images/sales/mem_card.png);
+}
+.icon.icon-recharge-record{
+    background-image: url(../images/sales/recharge.png);
+}
+.icon.icon-sign-record{
+    background-image: url(../images/sales/sign.png);
+}

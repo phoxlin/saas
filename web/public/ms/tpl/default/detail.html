@@ -1,0 +1,119 @@
+<script type="text/html" id="msDetailTpl">
+	<form id="<%=name%>_Form" class="form-inline" style="width:<%=width%>px;height:<%=height%>px" method="post">
+	<%
+		var _columnClassNumber=12/parseInt(columnNumber);
+		var columnClassNumber=parseInt(_columnClassNumber);
+		var hiddenControls=new Array();
+
+		for(var j=0;j<list.length;j++){
+			var legend=list[j];
+			var legendName=legend.name;
+			var legendTitle=legend.title;
+			var legendId=name+"_"+legendName;
+			var controls=new Array();
+			for(var i=0;i<legend.controls.length;i++){
+				var control=legend.controls[i];
+				if(!control.hidden){
+					controls.push(control);
+				}else{
+					hiddenControls.push(control);
+				}
+			}
+
+		for(var k=0;k<hiddenControls.length;k++){
+			var hControl=hiddenControls[k];
+			var hControlName=name+"__"+hControl.name;
+			var defaultVal=hControl.defaultValue;
+			%>
+			<input id="<%=hControlName%>" name="<%=hControlName%>" type="hidden" value="<%=defaultVal%>">
+			<%
+		}
+
+	%>
+		<fieldset name="<%=legendId%>">
+		<legend><%=legendTitle%></legend>
+		
+
+	<%
+			var index=0;
+
+			for(var i=0;i<controls.length;i++){
+				var hControl=controls[i];
+				var hControlName=name+"__"+hControl.name;
+				var defaultVal=hControl.defaultValue;
+				var hControlTitle=hControl.display;
+				var oneLine=hControl.oneLine;
+				if(!hControl.nullable){
+					hControlTitle=hControlTitle+"(*)";
+				}
+				var inputStr=createComponent(name,hControl,oneLine);
+
+				if(oneLine){
+					if(((index+1)%columnNumber)==0){
+						%>
+							</div>
+						<%
+					}else{
+						if(((index+1)%columnNumber)<columnNumber){
+						%>
+							</div>
+						<%
+						}
+					}
+					index=0;
+					%>
+
+						<div class="row" style="padding:2px;" data-content-row="Y">
+							<div class="col-xs-12">
+								<div class="form-group" style="display: block;">
+								    <label style="width:35%;" data-onlineLabel="Y" class="input-sm" for="<%=hControlName%>"><%=hControlTitle%></label>
+								 </div>
+							 </div>
+						</div>
+						<div class="row" style="padding:2px;" data-content-row="Y">
+							<div class="col-xs-12">
+								<div class="form-group" style="display: block;">
+								    <%:=inputStr%>
+								 </div>
+							 </div>
+						</div>
+ 
+					<%
+				}else{
+
+					if(index==0){
+						%>
+							<div class="row" style="padding:2px;" data-content-row="Y">
+						<%
+					}%>
+					<div class="col-xs-<%=columnClassNumber%>">
+						 <div class="form-group" style="display: block;">
+						    <label style="width:35%" class="input-sm" data-onlineLabel="N" for="<%=hControlName%>"><%=hControlTitle%></label>
+						    <%:=inputStr%>
+						  </div>
+					</div>
+
+					<%
+						if(((index+1)%columnNumber)==0&&i!=controls.length-1){
+							%>
+								</div>
+								<div class="row" style="padding:2px;" data-content-row="Y">		
+							<%
+						}
+						if(i==controls.length-1){
+							%>
+							</div>
+							<%
+						}
+					index++;
+					}
+				}
+			%>
+			</fieldset>
+				
+
+			<%
+		}
+	%>
+	</form>
+</script>

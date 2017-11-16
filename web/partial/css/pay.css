@@ -1,0 +1,140 @@
+@CHARSET "UTF-8";
+ul{-webkit-padding-start: 0; list-style: none;}
+
+.pay-amt,
+.pay-type{padding: 25px 50px;}
+.pay-amt{
+	background: #bbd416;color: #fff;
+}
+.pay-amt p label{font-weight: normal;font-size: 18px;}
+.pay-amt p b{margin-left: 5px;font-size: 30px;}
+.pay-amt p span{font-size: 24px;}
+.pay-amt .real-pay{
+	height: 58px;color: #333;position: relative;
+	background: url("../images/pay/real_pay.png") no-repeat left center transparent;
+}
+.pay-amt .real-pay label{
+	padding-left: 42%;max-width: 420px;overflow: hidden;
+	line-height: 50px;margin-bottom: 0;
+	font-size: 22px;
+}
+.pay-amt .real-pay span{
+	position: absolute; left: 88%;
+	font-size: 16px;line-height: 50px;color: #fff;
+}
+.pay-type .title{font-size: 18px;}
+.pay-type ul{margin: 20px 0;}
+.pay-type ul li{height: 40px;line-height: 40px;margin-bottom: 25px;font-size: 15px;}
+.pay-type ul li span{
+	display: inline-block;width: 50px;height: 100%;margin-left: 8px;
+	border-radius: 3px 0 0 3px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 25px 21px;
+}
+.pay-type ul li>label{
+	display: inline-block;width: 100px;height: 100%;margin-bottom: 0;margin-right: 15px;
+	padding-left: 10px;margin-left: -5px;
+	border-radius: 0 3px 3px 0;font-weight: normal;
+}
+.pay-type ul li input[type="number"]{
+	width: 240px;height: 100%;padding-left: 20px;
+	border: 1px solid #dddddd;border-radius: 0 3px 3px 0;font-weight: normal;outline: none;
+}
+.pay-type ul li i{margin-left: 12px;color: #666;}
+.pay-type ul li span,
+.pay-type ul li input,
+.pay-type ul li>label,
+.pay-type ul li i{vertical-align: middle;font-style: normal;}
+/*现金*/
+.pay-type ul li.pay-cash span{
+	background-image: url("../images/pay/cash.png");
+	background-color: #fa6a02;
+}
+.pay-type ul li.pay-cash label{
+	color: #fa6a02;
+}
+.pay-type ul li.pay-cash label,
+.pay-type ul li.pay-cash input[type="number"]:FOCUS{
+	border: 1px solid #fa6a02 !important;
+}
+/*储值卡*/
+.pay-type ul li.pay-card span{
+	background-image: url("../images/pay/card.png");
+	background-color: #33d3f5;
+}
+.pay-type ul li.pay-card label{
+	color: #33d3f5;
+}
+.pay-type ul li.pay-card label,
+.pay-type ul li.pay-card input[type="number"]:FOCUS{
+	border: 1px solid #33d3f5;
+}
+.pay-type ul li.pay-card{position: relative;}
+.pay-type ul li.pay-card .remain{
+	position: absolute;left: 193px;bottom: -20px;display: inline-block;
+    color: #999; line-height: normal; font-size: 13px;
+}
+/*银行卡*/
+.pay-type ul li.pay-bank span{
+	background-image: url("../images/pay/bank.png");
+	background-color: #cba900;
+}
+.pay-type ul li.pay-bank label{
+	color: #cba900;
+}
+.pay-type ul li.pay-bank label,
+.pay-type ul li.pay-bank input[type="number"]:FOCUS{
+	border: 1px solid #cba900;
+}
+/*代金券*/
+.pay-type ul li.pay-ticket span{
+	background-image: url("../images/pay/ticket.png");
+	background-color: #ffa200;
+}
+.pay-type ul li.pay-ticket label{
+	color: #ffa200;
+}
+.pay-type ul li.pay-ticket label,
+.pay-type ul li.pay-ticket input[type="number"]:FOCUS{
+	border: 1px solid #ffa200;
+}
+/*微信*/
+.pay-type ul li.pay-wx span{
+	background-image: url("../images/pay/wx.png");
+	background-color: #6acd6a;
+}
+.pay-type ul li.pay-wx label{
+	color: #6acd6a;
+}
+.pay-type ul li.pay-wx label,
+.pay-type ul li.pay-wx input[type="number"]:FOCUS{
+	border: 1px solid #6acd6a;
+}
+/*支付宝*/
+.pay-type ul li.pay-ali span{
+	background-image: url("../images/pay/ali.png");
+	background-color: #00aaee;
+}
+.pay-type ul li.pay-ali label{
+	color: #00aaee;
+}
+.pay-type ul li.pay-ali label,
+.pay-type ul li.pay-ali input[type="number"]:FOCUS{
+	border: 1px solid #00aaee;
+}
+/*联合付款*/
+.pay-type ul li.pay-all{
+	height: auto;margin-bottom: 0;padding: 0;background: #f8f8f8;
+}
+.pay-type ul li.pay-all label{
+	font-weight: normal;
+}
+.pay-type ul li.pay-all div{
+	width: 18%; display: inline-block;padding: 10px 0; 
+	text-align: center; font-size: 18px;
+}
+.pay-type ul li.pay-all div:FIRST-CHILD{width: 23%;background: #eee;}
+.pay-type ul li.pay-all div input{
+	vertical-align: middle;margin-top: 0;
+}

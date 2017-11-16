@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<table name="f_words" comment="上课评价">
+  <column name="id" field="id" type="string" comment="ID" length="24" nullable="false" controlType="easyui-validatebox" input_tablename="f_words" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="ID" search_compare="" iskey="true" isAutoGenerate="true"/>
+  <column name="gym" field="gym" type="string" comment="GYM" length="50" nullable="false" controlType="easyui-validatebox" input_tablename="f_words" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="GYM" search_compare=""/>
+  <column name="cust_name" field="cust_name" type="string" comment="CUST_NAME" length="50" nullable="false" controlType="easyui-validatebox" input_tablename="f_words" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="CUST_NAME" search_compare=""/>
+  <column name="mem_id" field="mem_id" type="string" comment="MEM_ID" length="24" nullable="false" controlType="easyui-validatebox" input_tablename="f_words" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="MEM_ID" search_compare=""/>
+  <column name="type" field="type" type="string" comment="类型" length="20" nullable="false" controlType="easyui-validatebox" input_tablename="f_words" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="类型" search_compare=""/>
+  <column name="pri_order_id" field="pri_order_id" type="string" comment="上课ID" length="24" nullable="false" controlType="easyui-validatebox" input_tablename="f_words" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="上课ID" search_compare=""/>
+  <column name="cent" field="cent" type="long" comment="评价分数" nullable="false" controlType="easyui-numberbox" input_tablename="f_words" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="评价分数" search_compare=""/>
+  <column name="content" field="content" type="text" comment="评价内容" length="65000" nullable="true" controlType="textarea" input_tablename="f_words" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="评价内容" search_compare=""/>
+  <column name="state" field="state" type="string" comment="STATE" length="20" nullable="false" controlType="easyui-validatebox" input_tablename="f_words" width="100" min="0" max="10000" decamial="0" otherset="" placeholder="STATE" search_compare=""/>
+</table>

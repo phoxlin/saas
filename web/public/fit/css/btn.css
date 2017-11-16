@@ -1,0 +1,10 @@
+@CHARSET "UTF-8";
+.btn{color: #fff !important;font-size: 14px;border-radius: 3px;}
+.btn-large{padding: 8px 60px;font-size: 18px;}
+.btn-green{
+	background: #bbd416;
+}
+.btn-default{
+	background: #606161 !important;
+}
+.btn-small{padding: 4px 8px;}

@@ -1,0 +1,235 @@
+<script type="text/html" id="common_query_IndexTpl">
+	<%
+		var head = list.head;
+		
+		var headers=[];
+		
+		var orderby='';
+		var desc='n';
+		if(list.orderby!=undefined){orderby=list.orderby; };
+		if(list.desc!=undefined){desc=list.desc; };
+											
+		if(head != null && head.length > 0){
+			for(var i=0; i<head.length; i++){
+				var item = head[i];
+				if(item.show){
+					headers.push(item);
+				}
+			}
+		}
+		var colspan=headers.length+1;
+
+		if(dialog_title!=null&&dialog_title.length>0){
+			%>
+				<div class="col-lg-12" style="padding-left: 0">
+					<h3><%=dialog_title%></h3>
+				</div>
+	
+			<%
+		}
+	%>
+				<div class="btn-container col-lg-12" style="margin-bottom: 5px;padding-left: 15px;">
+						<input  id="<%=name%>_cq_type" value="<%=list.cq_type%>" type="hidden">
+						<input id="<%=name%>_editpage" value="<%=list.editpage%>"  type="hidden">
+						<a id="<%=name%>_refresh_toolbar" class="btn btn-default" onclick="cq('<%=name%>','<%=type%>',<%=params%>,'<%=list.curpage%>','<%=list.pagesize%>','<%=orderby%>','<%=desc%>');">刷新</a>
+						<%
+							if(list.toolbars!=null&&list.toolbars.length>0){
+								for(var i=0;i<list.toolbars.length;i++){
+									var toolbar=list.toolbars[i];
+									var js=toolbar.js;
+									var text=toolbar.text;
+									var toolbarname=toolbar.name;
+									var class_name = "btn-primary";
+									if("删除" == text){
+										class_name = "btn-danger";
+									}
+									%>
+										<a id="<%=toolbarname%>_toolbar" class="btn <%=class_name%>" onclick="javascript:<%=js%>('<%=name%>')"><%=text%></a>
+									<%
+								}
+							}
+						%>
+					<div class="btn-group" style="float: right;margin-right: 30px;">
+						<button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+						  数据导出 <span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" role="menu">
+							<li><a onclick="cExpert('<%=name%>','<%=type%>',<%=params%>,'<%=list.curpage%>','<%=list.pagesize%>','<%=orderby%>','<%=desc%>');">导出当前页</a></li>
+							<li><a onclick="cExpert('<%=name%>','<%=type%>',<%=params%>,'-1','<%=list.pagesize%>','<%=orderby%>','<%=desc%>');">导出所有页</a></li>
+						</ul>
+					</div>
+				</div>
+			<%
+				if(list.searchs!=null&&list.searchs.length>0){
+				%>
+			<div class="col-lg-12 filter-container">
+				<%
+					for(var i=0;i<list.searchs.length;i++){
+						var row_search=list.searchs[i];
+						%>
+						<div class="form-inline"  role="form">
+						<%
+						for(var k=0;k<row_search.length;k++){
+							var sfield=row_search[k];
+							var label=sfield.label;
+							var stype=sfield.type;
+							var value=sfield.value;
+							var labelname=sfield.name;
+
+							%>
+							<div class="form-group">
+								<div class="input-group" id="<%=labelname%>_input_search">
+									<div class="input-group-addon" style="width:100px;"><%=label%></div>
+									<%
+										if(stype=='text'){
+										%>
+										<input type="text" class="form-control" style="width:120px;height: 30px;" id="<%=labelname%>" placeholder="<%=label%>" value="<%=value%>">
+										<%
+										}else if(stype=='code'){
+										%>
+										<select id="<%=labelname%>" style="width:120px;height: 30px;">
+											<option value ="">请选择</option>
+										<%
+											if(sfield.bindData!=null&&sfield.bindData.length>0){
+												for(var j=0;j<sfield.bindData.length;j++){
+													var data=sfield.bindData[j];
+													var code=data.code;
+													var note=data.note;
+													if(code==value){
+														%>
+															<option value ="<%=code%>" selected='selected'><%=note%></option>
+														<%
+													}else{
+														%>
+														<option value ="<%=code%>"><%=note%></option>
+														<%
+													}
+												}
+											}				
+										%>
+										</select>
+										<%
+										}else if(stype=='date'){
+										%>
+											<input id="<%=labelname%>" style="width:120px;height: 30px;" type="text" class="easyui-datebox" value="<%=value%>" options="editable:false">
+										<%
+										}
+									%>
+								 	
+								</div>
+							</div>
+							<%
+						}
+						%>
+						</div>
+						<%
+					}
+				%>
+		</div>
+				<%
+				}
+			%>
+	<div id="<%=name%>_responsive" name="<%=name%>_responsive" class="table-responsive data-container col-lg-12">
+		<table id="<%=name%>_table" name="<%=name%>_table" class="table table-hover table-condensed" style="width:<%=list.tableWidth%>px;">
+			<thead>
+				<tr>
+					<th style="width: 30px;"><input id="<%=name%>_all" type="checkbox" onclick="checkedAll('<%=name%>');"></th>
+					<%
+						for(var i=0;i<headers.length;i++){
+							var h=headers[i];
+							var sortclass="";
+							var descParam='desc'; 
+							if(h.code==list.orderby){
+								if(list.desc=='desc'){
+									sortclass="descClass";
+									descParam='desc';
+								}else{
+									sortclass="ascClass";
+									descParam='asc';
+								}
+							}
+							%>
+								<th class="<%=sortclass%>" style="width: <%=h.width%>px;"  onclick="cq('<%=name%>','<%=type%>',<%=params%>,'<%=list.curpage%>','<%=list.pagesize%>','<%=h.code%>','<%=descParam%>');"><%=h.display%></th>
+							<%
+						}
+					%>
+				</tr>
+			</thead>
+			<tbody>
+				<%
+				for(var i=0;i<list.rows.length;i++){
+					var obj = list.rows[i];
+					%>
+					<tr>
+						<td style="width: 30px;">
+							<input name="<%=name%>_row" id="<%=name%>_row_<%=i%>" type="checkbox"  onclick="changed_click('<%=name%>','<%=i%>')">
+							<%
+								 
+								if(head != null && head.length > 0){
+									for(var k=0; k<head.length; k++){
+										var item = head[k];
+										if(item.send){
+											var val=obj[item.code];if(val == undefined){val='';}
+											var input_name=name+"__"+item.code+"_"+i;
+											%>
+											<input name="<%=input_name%>" id="<%=input_name%>" type="hidden" value="<%=val%>">
+											<%
+										}
+									}
+								}
+							%>
+						</td>
+							<%
+							
+							for(var k=0;k<headers.length;k++){
+								var h=headers[k];
+								var input_html_name=name+"__"+h.code+"_html_"+i;
+								var val=obj[h.code]; if(val == undefined){val='';}
+	
+							%>
+								<td style="padding: 5px 0;" id="<%=input_html_name%>" name="<%=input_html_name%>" onclick="row_click('<%=name%>','<%=i%>')">
+ 									<div  style="width: <%=h.width%>px;padding: 0 8px;">
+										<%=val%>
+									</div>
+								</td>
+							<%
+						}
+							%>
+					</tr>
+				<%}%>
+				</tbody>
+		</table>
+	</div>
+	<%
+	if(list.curpage>0&&list.totalpage>0){
+		var pages=list.pages;
+	%>
+		<div class="row  col-lg-12" >
+			<div class="col-lg-3">
+				<div class="dataTables_info" style="padding-top: 8px;">
+				 	总数<%=list.total%>&nbsp;
+	                                              当前页条数<%=list.rows.length%>
+				</div>
+			</div>
+			<div class="col-lg-9" style="text-align: right;">
+				<ul class="pagination" style="margin: 8px 0;">
+					<li><a onclick="cq('<%=name%>','<%=type%>',<%=params%>,'1','<%=list.pagesize%>','<%=orderby%>','<%=desc%>');">&laquo;</a></li>
+					<%
+		
+						for(var i=0;i<pages.length;i++){
+							%>
+							<li><a onclick="cq('<%=name%>','<%=type%>',<%=params%>,'<%=pages[i]%>','<%=list.pagesize%>','<%=orderby%>','<%=desc%>');"><%=pages[i]%></a></li>
+							<%
+						}										
+					%>
+					<li><a onclick="cq('<%=name%>','<%=type%>',<%=params%>,'<%=list.totalpage%>','<%=list.pagesize%>','<%=orderby%>','<%=desc%>');">&raquo;</a></li>
+				</ul>
+			</div>
+		</div>
+		<%
+	}
+
+%>
+</script>
+					
+
