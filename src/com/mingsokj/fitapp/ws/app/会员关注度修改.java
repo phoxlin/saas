@@ -7,6 +7,7 @@ import com.jinhua.server.m.HttpMethod;
 import com.mingsokj.fitapp.m.MemInfo;
 
 public class 会员关注度修改 extends BasicAction {
+
 	@Route(value = "/fit-app-action-changeFoucs", conn = true, m = HttpMethod.POST, type = ContentType.JSON)
 	public void getEmpList() throws Exception {
 		String gym = this.getParameter("gym");
