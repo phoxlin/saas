@@ -43,37 +43,37 @@ function showPay(formData, callback) {
 function printXiaoPiao(xiaoPType, formData, payData, obj) {
 	// 单次入场券
 	if ("com.mingsokj.fitapp.flow.impl.购卡Flow" != xiaoPType) {
-	if ("com.mingsokj.fitapp.flow.impl.散客购票Flow" == xiaoPType) {
-		if (obj) {
-			var 	html ="";
-			for (var i = 0; i < obj.length; i++) {
-				var xx = obj[i];
-				html += template($("#oncePaper").html(), {
+		if ("com.mingsokj.fitapp.flow.impl.散客购票Flow" == xiaoPType) {
+			if (obj) {
+				var 	html ="";
+				for (var i = 0; i < obj.length; i++) {
+					var xx = obj[i];
+					html += template($("#oncePaper").html(), {
+						gym_name : formData.gymName,
+						emp_name : formData.emp_name,
+						pay_time : formData.payTime,
+						price : xx.real_amt,
+						fitId : xx.buy_id,
+						deadline : xx.deadline,
+						checkin_no : xx.checkin_no
+					});
+					html += "<br/>";
+				}
+				$("#once-paper-print-div").html(html);
+				divPrint('once-paper-print-div');
+			}
+		} else {
+			if (obj && obj != null && obj != []) {
+				var html = template($("#normalPaper").html(), {
 					gym_name : formData.gymName,
 					emp_name : formData.emp_name,
 					pay_time : formData.payTime,
-					price : xx.real_amt,
-					fitId : xx.buy_id,
-					deadline : xx.deadline,
-					checkin_no : xx.checkin_no
+					data : obj
 				});
-				html += "<br/>";
+				$("#paper-print-div").html(html);
+				divPrint("paper-print-div");
 			}
-			$("#once-paper-print-div").html(html);
-			divPrint('once-paper-print-div');
 		}
-	} else {
-		if (obj && obj != null && obj != []) {
-			var html = template($("#normalPaper").html(), {
-				gym_name : formData.gymName,
-				emp_name : formData.emp_name,
-				pay_time : formData.payTime,
-				data : obj
-			});
-			$("#paper-print-div").html(html);
-			divPrint("paper-print-div");
-		}
-	}
 	}
 }
 

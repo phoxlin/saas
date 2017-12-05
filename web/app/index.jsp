@@ -36,7 +36,7 @@
 	L.info("url:"+redirectURL);
 	String code = request.getParameter("code");
 	String cust_name = request.getParameter("cust_name");
-	
+	L.info(cust_name);
 	String appId = Resources.getProperty("wx." + cust_name + ".appId", "");
 	String appSecret = Resources.getProperty("wx." + cust_name + ".appSecret", "");
 	String configUrl = Resources.getProperty("wx."+cust_name+".url");

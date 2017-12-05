@@ -441,7 +441,7 @@ function showEmpList() {
 					if (data.rs == "Y") {
 						var empListTpl = document.getElementById("empListTpl").innerHTML;
 						content = template(empListTpl, {
-							data : data.list,
+							data : data.list
 						});
 						$("#empListDiv").html(content);
 						openPopup(".popup-empList");

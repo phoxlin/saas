@@ -91,8 +91,7 @@
 
 							//是否需要其他的打印，比如打印私教合同，购卡合同等
 							if (data.printContract=="ok" && data.contractType) {
-								printContract(data.contractType, data.buy_id,
-										formData, payData);
+								printContract(data.contractType, data.buy_id,formData, payData);
 							}
 							if (typeof (callback) == "function") {
 								callback();

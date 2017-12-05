@@ -23,6 +23,7 @@ public class FitQmImpl extends QmInfo {
 	@Override
 	public Map<String, Object> parseSql2(String taskcode, List<Object> ps, JSONArray filter, Map<String, Object> p, Columns columns, User user, String order, String desc, Connection conn) throws Exception {
 		String sql = this.getSql();
+		System.out.println("Sql1:"+sql);
 		String tableAliase = this.getTableAliase(p);
 		Map<String, Object> m = new HashMap<>();
 		List<Object> list = new ArrayList<>();
@@ -103,6 +104,7 @@ public class FitQmImpl extends QmInfo {
 			}
 		}
 		m.put("sql", sql.toString());
+		System.out.println("Sql2:" + sql.toString());
 		m.put("params", list.toArray());
 		return m;
 	}

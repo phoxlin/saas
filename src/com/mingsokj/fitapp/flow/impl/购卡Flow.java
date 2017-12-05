@@ -83,8 +83,6 @@ public class 购卡Flow extends Flow {
 		try {
 			days = cardEn.getIntegerValue("days");
 		} catch (Exception e) {
-		} finally {
-			days = 365 * 100;
 		}
 		int times = cardEn.getIntegerValue("times");
 		String card_type = cardEn.getStringValue("card_type");

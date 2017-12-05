@@ -652,7 +652,7 @@ public class 会员Excel导入 extends BasicAction {
 			entity.setValue("card_id", card_id);
 			entity.setValue("mem_id", id);
 			entity.setValue("emp_id", user.getId());
-			entity.setValue("emp_name", user.getMemInfo().getName());
+			entity.setValue("emp_name", user.getLoginName());
 			entity.setValue("source", "excelExport");
 
 			entity.setValue("buy_time", buyTime);

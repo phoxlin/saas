@@ -137,7 +137,7 @@
 			<span>结束:</span><input type="date" id="end_time" style="width: 135px;height: 28px;"/>
 			</div>
 			<div style="float: left;">
-			<input style="width: 122px;height: 28px;margin-left: 5px;display: inline-block;" class="form-control" type="text" id="searchMem" name="searchMem" placeholder="搜索会员"/>
+			<input style="width: 122px;height: 28px;margin-left: 5px;display: inline-block;" class="form-control" type="text" id="searchMem" name="searchMem" placeholder="会员姓名"/>
 			<span id="searchBtn"></span>
 			</div>
 		</div>

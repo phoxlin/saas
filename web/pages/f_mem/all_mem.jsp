@@ -79,7 +79,7 @@ $(document).ready(function() {
         }
         if ("新增会员" == dataType) {
             f_mem___f_mem_params = {
-            	aliase:'a',
+            	//aliase:'a',
             	sql: "select * from f_mem_<%=cust_name%> where id in (select id from f_mem_<%=cust_name%> a where a.gym=? union all select a.id from f_mem_<%=cust_name%> a,f_user_card_<%=gym%> b where a.id=b.mem_id ) and datediff(now(), create_time) <3",
                 sqlPs: ['<%=gym%>']
             };
